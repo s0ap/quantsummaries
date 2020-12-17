@@ -1,0 +1,122 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>[your group]</groupId>
+  <artifactId>[your artifact id]</artifactId>
+  <packaging>jar</packaging>
+  <version>0.1.0-SNAPSHOT</version>
+  <name>[your project name]</name>
+  <description>
+    [your project description]
+  </description>
+  <inceptionYear>[your inception year]</inceptionYear>
+  <url>[your company's url]</url>
+  <developers>
+    <developer>
+      <id>[your id]</id>
+      <name>[your name]</name>
+      <properties>
+        <active>true</active>
+      </properties>
+    </developer>
+  </developers>
+  <!-- Useful for declaring depenency versions. -->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!-- Dependencies -->
+    <junit.version>4.13</junit.version>
+    <clover.version>4.4.1</clover.version>
+    <!-- Build -->
+    <maven-site-plugin.version>3.7.1</maven-site-plugin.version>
+    <maven-surefire-plugin.version>3.0.0-M2</maven-surefire-plugin.version>
+    <!-- Reporting -->
+    <!-- <cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version> -->
+    <findbugs-maven-plugin.version>3.0.1</findbugs-maven-plugin.version>
+    <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
+    <maven-jxr-plugin.version>2.3</maven-jxr-plugin.version>
+    <maven-project-info-reports-plugin.version>3.0.0</maven-project-info-reports-plugin.version>
+    <maven-surefire-report-plugin.version>2.17</maven-surefire-report-plugin.version>
+  </properties>
+  <dependencies>
+    <!-- For unit test -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+      <!-- Dependencies are available during the test phase. -->
+    </dependency>
+    <!-- For code coverage of testing -->
+    <dependency>
+      <groupId>org.openclover</groupId>
+      <artifactId>clover-maven-plugin</artifactId>
+      <version>${clover.version}</version>
+      <type>maven-plugin</type>
+    </dependency>
+  </dependencies>
+  <build>
+    <!-- Plug-ins and their behavior can be configured using the plug-in section of pom.xml. -->
+    <plugins>
+      <!-- For compilation -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <!-- For site generation -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>${maven-site-plugin.version}</version>
+      </plugin>
+      <!-- Skip remaining tests after first failure or error. -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${maven-surefire-plugin.version}</version>
+        <configuration>
+          <skipAfterFailureCount>1</skipAfterFailureCount>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <reporting>
+    <plugins>
+      <!-- For reporting: code coverage -->
+      <!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>cobertura-maven-plugin</artifactId> <version>${cobertura-maven-plugin.version}</version> </plugin> -->
+      <!-- For reporting: bug -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>${findbugs-maven-plugin.version}</version>
+      </plugin>
+      <!-- For reporting: documentation by Javadoc -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>${maven-javadoc-plugin.version}</version>
+      </plugin>
+      <!-- For reporting: to remove '[WARNING] Unable to locate Source XRef to link to - DISABLED' -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <version>${maven-jxr-plugin.version}</version>
+      </plugin>
+      <!-- For reporting: project info -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>${maven-project-info-reports-plugin.version}</version>
+      </plugin>
+      <!-- For reporting: unit test -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+        <version>${maven-surefire-report-plugin.version}</version>
+      </plugin>
+    </plugins>
+  </reporting>
+</project>
