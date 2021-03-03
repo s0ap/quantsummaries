@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Resources for Quantitative Finance Professionals.">
+  <meta name="keywords" content="Quantitative Finance, Solution Manuals, Summaries">
+  <meta name="author" content="Yan Zeng">
+  <title>Summaries for Quantitative Finance</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Yan Zeng</h1>
+  <p>I'm a quantitative professional working in the financial industry. For my professional profile, please refer to my <a href="https://www.linkedin.com/in/yan-zeng-14888043">LinkedIn page</a>.</p>
+  <p>This website is for knowledge-sharing purpose. I hope it will help aspiring young professionals navigate quantitative finance more easily.</p>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openPage(event, 'My Bookshelf')" id="defaultOpen">My Bookshelf</button>
+    <button class="tablinks" onclick="openPage(event, 'Quant Summaries')">Quant Summaries</button>
+    <button class="tablinks" onclick="openPage(event, 'Solution Manuals')">Solution Manuals</button>
+    <button class="tablinks" onclick="openPage(event, 'Cheat Sheet')">Cheat Sheet</button>
+    <button class="tablinks" onclick="openPage(event, 'Things on Mind')">Things on Mind</button>
+    <button class="tablinks" onclick="openPage(event, 'Math for Kids')">Math for Kids</button>
+    <button class="tablinks" onclick="openPage(event, 'Contact Me')">Contact Me</button>
+  </div>
+
+  <div id="My Bookshelf" class="tabcontent">
+    <h3>My Bookshelf</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="Quant Summaries" class="tabcontent">
+    <h3>Quant Summaries</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="Solution Manuals" class="tabcontent">
+    <h3>Solution Manuals</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="Cheat Sheet" class="tabcontent">
+    <h3>Cheat Sheet</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="Things on Mind" class="tabcontent">
+    <h3>Things on Mind</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="Math for Kids" class="tabcontent">
+    <h3>Math for Kids</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="Contact Me" class="tabcontent">
+    <h3>Contact Me</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <script>
+    function openPage(evt, pageName) {
+
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(pageName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+
+
+
+
+
+  <h3>Quantitative Finance</h3>
+  <ul>
+    <li><a href="bookshelf.html" target="_blank">My Bookshelf</a></li>
+    <li><a href="quant-summaries.html" target="_blank">Quant Summaries</a></li>
+    <li><a href="solution-manuals.html" target="_blank">Solution Manuals</a></li>
+    <li><a href="cheat-sheet.html" target="_blank">Cheat Sheet</a></li>
+    <li><a href="things-on-mind.html" target="_blank">Things on Mind</a></li>
+  </ul>
+  <hr />
+
+  <h3>Personal</h3>
+  <ul>
+    <li><a href="math-for-kids.html" target="_blank">Math for Kids (4+)</a>（启蒙数学）</li>
+  </ul>
+  <hr />
+
+  Last updated: 2020-12-16.
+  <a href="contact-me.html">Contact Me</a>
+</body>
+
+</html>

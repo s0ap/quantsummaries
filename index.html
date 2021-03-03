@@ -8,41 +8,1085 @@
   <meta name="author" content="Yan Zeng">
   <title>Summaries for Quantitative Finance</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
 
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Yan Zeng</h1>
-  <p>I'm a quantitative professional working in the financial industry. For my professional profile, please refer to my <a href="https://www.linkedin.com/in/yan-zeng-14888043">LinkedIn page</a>.</p>
-  <p>This website is for knowledge-sharing purpose, and I use the materials on this website in my daily work and in building up my knowledge base. I hope it will help aspiring young professionals navigate quantitative finance more easily.</p>
-  <hr />
+  <h2>Yan Zeng</h2>
+  <p>This website is for knowledge-sharing purpose. I hope it will help aspiring young professionals navigate quantitative finance more easily. For my professional profile, please refer to my <a href="https://www.linkedin.com/in/yan-zeng-14888043" target="_blank">LinkedIn page</a>.</p>
 
+  <div class="tab">
+    <button class="tablinks" onclick="openPage(event, 'My Bookshelf')" id="defaultOpen">My Bookshelf</button>
+    <button class="tablinks" onclick="openPage(event, 'Quant Summaries')">Quant Summaries</button>
+    <button class="tablinks" onclick="openPage(event, 'Solution Manuals')">Solution Manuals</button>
+    <button class="tablinks" onclick="openPage(event, 'Cheat Sheet')">Cheat Sheet</button>
+    <button class="tablinks" onclick="openPage(event, 'Things on Mind')">Things on Mind</button>
+    <button class="tablinks" onclick="openPage(event, 'Math for Kids')">Math for Kids</button>
+    <button class="tablinks" onclick="openPage(event, 'Contact Me')">Contact Me</button>
+  </div>
 
+  <div id="My Bookshelf" class="tabcontent">
+    <h3>Numerical Analysis</h3>
+    <ul>
+      <li>National Institute of Standards and Technology: <a href="https://dlmf.nist.gov/" target="_blank">NIST Digital Library of Mathematical Functions</a>.</li>
+      <li>Lloyd N. Trefethen and David Bau, III. <a href="https://people.maths.ox.ac.uk/trefethen/text.html" target="_blank"><em>Numerical Linear Algebra</em></a>. SIAM, 1997.</li>
+      <li>Alfio Quarteroni and Fausto Saleri. <em>Scientific Computing with MATLAB and Octave</em>, 2nd Edition. Springer, 2007</li>
+      <li>Alfio Quarteroni, Riccardo Sacco, and Fausto Saleri. <em>Numerical Mathemartics</em>, 2nd Edition. Springer, 2006.</li>
+      <li>William H. Press, Brian P. Flannery, Saul A. Teukolsky, and William T. Vetterling. <a href="http://www.nrbook.com/a/bookcpdf.php" target="_blank"><em>Numerical Recipes in C: The Art of Scientific Computing</em></a>, 2nd edition. <a
+          href="http://numerical.recipes/" target="_blank">numerical.recipes</a>.</li>
+      <li>Kenneth Judd. <em>Numerical Methods in Economics</em>. The MIT Press (October 27, 1998).</li>
+      <li>Miscellaneous:</li>
+      <ul tpe="circle">
+        <li>David Goldberg: <a href="bookshelf/Goldberg_floating-point-arithmetic.pdf" target="_blank">What Every Computer Scientist Should Know About Floating-Point Arithmetic</a>.</li>
+        <li>John Burkardt: <a href="https://people.sc.fsu.edu/~jburkardt/f_src/quadpack/quadpack.html" target="_blank">Advice on choosing numerical integration routines from QUADPACK</a>.</li>
+      </ul>
+    </ul>
+    <hr>
 
-  <h3>Quantitative Finance</h3>
-  <ul>
-    <li><a href="bookshelf.html" target="_blank">My Bookshelf</a></li>
-    <li><a href="quant-summaries.html" target="_blank">Quant Summaries</a></li>
-    <li><a href="solution-manuals.html" target="_blank">Solution Manuals</a></li>
-    <li><a href="cheat-sheet.html" target="_blank">Cheat Sheet</a></li>
-    <li><a href="things-on-mind.html" target="_blank">Things on Mind</a></li>
-  </ul>
-  <hr />
+    <h3>Statistics, Econometrics, and Machine Learning</h3>
+    <ul>
+      <li><a href="https://www.itl.nist.gov/div898/handbook/index.htm" target="_blank">NIST/SEMATECH e-Handbook of Statistical Methods</a>. This handbook is to help scientists and engineers incorporate statistical methods in their work efficiently.
+      </li>
+      <li><a href="http://lib.stat.cmu.edu/apstat/" target="_blank">StatLib--Applied Statistics algorithms</a>. 300+ statistical algorithms published by The Royal Statistics Society.</li>
+    </ul>
 
-  <h3>My Udemy Courses</h3>
-  <ul>
-    <li><a href="course-scff.html" target="_blank">My Udemy Course: Stochatic Calculus for Finance</a> (under construction)</li>
-  </ul>
-  <hr />
+    <ul>
+      <li>The Big Picture</li>
+      <ul type="circle">
+        <li>陈希孺：<a href="https://issuu.com/xiuxiuebook/docs/____________________________________b066ad06abc7aa" target="_blank">《数理统计学简史》</a>。长沙：湖南教育出版社，2002。</li>
+        <li>陈希孺：《统计学概貌》。科学文献技术出版社，1989。</li>
+        <li>Larry Wasserman. <a href="https://www.stat.cmu.edu/~larry/all-of-statistics/" target="_blank"><em>All of Statistics</em></a>.</li>
+        <li>Peter Kennedy. <em>A Guide to Econometrics</em>, 6th Edition. Wiley-Blackwell, 2008.</li>
+        <li>Bradley Efron and Trevor Hastie. <a href="https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf" target="_blank"><em>Computer Age Statistical Inference: Algorithms, Evidence, and Data Science</em></a>. Cambridge University Press, 2016.
+        </li>
+        <li>"<a href="https://robjhyndman.com/hyndsight/statistics-vs-econometrics/" target="_blank">I am not an econometrician</a>", "<a
+            href="https://www.forbes.com/sites/quora/2019/07/12/what-are-the-differences-between-econometrics-statistics-and-machine-learning/?sh=53cc66b029b3" target="_blank">What Are The Differences Between Econometrics, Statistics, and Machine
+            Learning?</a>", "<a href="https://www.reddit.com/r/econometrics/comments/8yoae9/econometrics_versus_statistics/" target="_blank">Econometrics versus Statistics</a>".</li>
+      </ul>
 
-  <h3>Personal</h3>
-  <ul>
-    <li><a href="math-for-kids.html" target="_blank">Math for Kids (4+)</a>（启蒙数学）</li>
-  </ul>
-  <hr />
+      <li>Boot Camp</li>
+      <ul type="circle">
+        <li>Matthew Stephens. <a href="https://stephens999.github.io/fiveMinuteStats/index.html" target="_blank"><em>Five Minutes Stats</em></a>.</li>
+        <li>Quick-R: <a href="https://www.statmethods.net/stats/index.html" target="_blank">Basic Statistics</a>, <a href="https://www.statmethods.net/advstats/index.html" target="_blank">Advanced Statistics</a>, <a
+            href="https://www.statmethods.net/stats/rdiagnostics.html" target="_blank">Regression Diagnostics with package 'car'</a>.</li>
+        <li>Simon Wood. <a href="https://www.maths.ed.ac.uk/~swood34/core-statistics.pdf" target="_blank"><em>Core Statistics</em></a>.</li>
+        <li>Allen B. Downey. <a href="http://www.greenteapress.com/thinkstats/" target="_blank"><em>Think Stats: Probability and Statistics for Programmers</em></a>. O'Reilly Media, 2011. </li>
+        <li>Allen B. Downey. <a href="https://open.umn.edu/opentextbooks/textbooks/think-bayes-bayesian-statistics-made-simple" target="_blank"><em>Think Bayes: Bayesian Statistics Made Simple</em></a>. O'Reilly Media, 2013.</li>
+        <li>Python 'statsmodels' package: <a href="https://www.statsmodels.org/stable/index.html" target="_blank">Official Documentation</a>, <a href="https://www.statsmodels.org/dev/user-guide.html" target="_blank">User Guide</a>, <a
+            href="https://www.statsmodels.org/dev/examples/index.html#" target="_blank">Examples</a>, <a href="https://www.statsmodels.org/stable/diagnostic.html" target="_blank">Regression Diagnostics and Specification Tests</a>, <a
+            href="https://www.statsmodels.org/dev/examples/notebooks/generated/regression_diagnostics.html" target="_blank">Regression Diagnostics</a>, <a href="https://mode.com/python-tutorial/libraries/statsmodels/" target="_blank">Tutorials by
+            Mode.com</a>, <a href="https://devdocs.io/statsmodels/" target="_blank">StatsModels at devdocs.io</a>.</li>
+        <li>Google: <a href="https://developers.google.com/machine-learning/crash-course" target="_blank">Machine Learning Crash Course</a>.</li>
+      </ul>
+    </ul>
 
-  Last updated: 2020-12-16.
-  <a href="contact-me.html">Contact Me</a>
+    <ul>
+      <li>Iteration 1:</li>
+      <ul type="circle">
+        <li>Dmitry Panchenko. MIT Open Course 18.443: <em>Statistics for Applications</em>. MIT OCW, Fall 2003. <a href="https://ocw.mit.edu/courses/mathematics/18-443-statistics-for-applications-fall-2003/" target="_blank">Course website</a>.</li>
+        <li>Roberto Pedace. <em>Econometrics for Dummies</em>. For Dummies, 2013.</li>
+        <li>Trevor Hastie and Rob Tibshirani: <a href="https://www.r-bloggers.com/2014/09/in-depth-introduction-to-machine-learning-in-15-hours-of-expert-videos/" target="_blank">In-depth Introduction to Machine Learning in 15 Hours of Expert
+            Videos</a>.</li>
+      </ul>
+
+      <li>Iteration 2:</li>
+      <ul type="circle">
+        <li>陈家鼎、孙山泽、李东风、刘力平编著：《数理统计学讲义（第2版）》。北京：高等教育出版社，2003。</li>
+        <li>何书元编著：《应用时间序列分析》。北京：北京大学出版社，2003。</li>
+        <li>David Ruppert. <em>Statistics and Data Analysis for Financial Engineering</em>. Springer, 2010.</li>
+        <li>Ruey S. Tsay. <em>Analysis of Financial Time Series</em>, 3rd edition. Wiley, 2010.</li>
+        <li>Andriy Burkov. <em>The Hundred-Page Machine Learning Book</em>. 2019-07-05. <a href="https://leanpub.com/theMLbook" target="_blank">LeanPub</a>.</li>
+      </ul>
+
+      <li>Iteration 3:</li>
+      <ul type="circle">
+        <li>Chris Brooks. <em>Introductory Econometrics for Finance</em>, <a href="https://www.youtube.com/watch?v=XTkpdkWVfOU&list=PL58gEE9UNSimFCR_z068GIGi88wc8Momp" target="_blank">video lectures</a>, <a
+            href="https://www.cambridge.org/us/academic/textbooks/introductory-econometrics" target="_blank">publisher's resources site</a>.</li>
+        <li>Rachev, Mittnik, Fabozzi, Focardi, and Jasic: <em>Financial Econometrics</em>. Wiley, 2006.</li>
+        <li>Aurélien Géron. <em>Hands-On Machine Learning with Scikit-Learn and TensorFlow</em>. O'Reilly Media, 2017.</li>
+      </ul>
+    </ul>
+
+    <ul>
+      <li>Addtional: Econometrics</li>
+      <ul type="circle">
+        <li>Colin Cameron. <a href="http://cameron.econ.ucdavis.edu/e240d/e240sequence.html" target="_blank">Ph.D. Econometrics Sequence at UC Davis</a>. <a href="http://cameron.econ.ucdavis.edu/e240a/e240a.html" target="_blank">Econ 240A: Econometrics
+            Methods I</a>. <a href="http://cameron.econ.ucdavis.edu/e240d/e240d.html" target="_blank">Econ 240D: Cross Section Econometrics</a>.</li>
+        <li>Steve Bond. <a href="http://www.nuffield.ox.ac.uk/people/sites/bond-teaching/" target="_blank">Oxford teaching</a>, <a href="http://www.nuffield.ox.ac.uk/users/bond/index.html" target="_blank">personal website</a>.</li>
+        <li>Fabian Waldinger. <a href="https://www.fabianwaldinger.com/empirical-economics-ii" target="_blank"><em>Econometrics II</em></a>. <a href="https://www.fabianwaldinger.com/applied-econometrics" target="_blank"><em>Applied Econometrics (PhD
+              level)</em></a>.</li>
+        <li>Fumio Hayashi. <em>Econometrics</em>. Princeton University Press, 2000.</li>
+        <li>A. Colin Cameron and Pravin K. Trivedi. <em>Microeconometrics: Methods and Applications</em>. Cambridge University Press, 2005.</li>
+        <li>Herman J. Bierens. <em>Introduction to the Mathematical and Statistical Foundations of Econometrics</em>. Cambridge University Press, 2005.</li>
+      </ul>
+      <li>Additional: Time Series</li>
+      <ul type="circle">
+        <li>James D. Hamilton. <em>TIme Series Analysis</em>. Princeton University Press, 1994.</li>
+        <li>Robert H. Shumway and David S. Stoffer. <em>Time Series Analysis and Its Applications with R Examples</em>, 4th edition. Springer, 2017.</li>
+        <li>Anna Mikusheva. MIT Open Course 14.384: <em>Time Series Analysis</em>. MIT OCW, Fall 2013. <a href="https://ocw.mit.edu/courses/economics/14-384-time-series-analysis-fall-2013/index.htm" target="_blank">Course website</a>.</li>
+        <li>Aad W. van der Vaart. <a href="https://www.math.leidenuniv.nl/~avdvaart/timeseries/index.html" target="_blank">Tjdreeksen</a>.</li>
+        <li><a href="https://google.github.io/CausalImpact/CausalImpact.html" target="_blank">CausalImpact</a>: An R package for causal inference using Bayesian structural time-series models.</li>
+      </ul>
+      <li>Additional: Generalized Additive Models</li>
+      <ul type="circle">
+        <li>Kim Larsen. <a href="https://multithreaded.stitchfix.com/blog/2015/07/30/gam/" target="_blank">GAM: The Predictive Modeling Silver Bullet</a> (July 30, 2015).</li>
+        <li>Magne Aldrin. <a href="bookshelf/Aldrin_gam-with-R.pdf" target="_blank">Generalized additive models in R</a> (with examples, October, 2012).</li>
+        <li>Trevor Hastie. <a href="https://cran.r-project.org/web/packages/gam/gam.pdf" target="_blank">Package 'gam'</a> (July 20, 2018).</li>
+        <li>Simon Wood. <a href="https://www.maths.ed.ac.uk/~swood34/" target="_blank">Website at University of Edinburgh</a> (GAM and more).</li>
+      </ul>
+      <li>Additional: Regression Diagnostics</li>
+      <ul type="circle">
+        <li>韦博成、鲁国斌、史建清：《统计诊断引论》。南京：东南大学出版社，1991。</li>
+
+        <li><a href="https://socialsciences.mcmaster.ca/jfox/" target="_blank">John Fox</a>:</li>
+        <ul type="square">
+          <li><a href="https://socialsciences.mcmaster.ca/jfox/Courses/Brazil-2009/index.html" target="_blank">Regression Diagnostics</a>, presentation slides, Brazil, November 2009.</li>
+          <li><a href="https://socialsciences.mcmaster.ca/jfox/Books/RegressionDiagnostics/index.html" target="_blank"><em>Regression Diagnostics: An Introduction</em></a>, 2nd edition. SAGE Publications, 2019.</li>
+          <li><a href="https://socialsciences.mcmaster.ca/jfox/Books/Applied-Regression-3E/index.html" target="_blank"><em>Applied Regression Analysis and Generalized Linear Models</em></a>, 3rd edition. SAGE Publications, 2016</li>
+          <li><a href="https://socialsciences.mcmaster.ca/jfox/Books/Companion/index.html" target="_blank"><em>An R Companion to Applied Regression</em></a>, 3rd edition. SAGE Publications, 2019.</li>
+        </ul>
+
+        <li><a href="http://users.stat.umn.edu/~sandy/" target="_blank">Sanford Weisberg</a>:</li>
+        <ul type="square">
+          <li><a href="http://users.stat.umn.edu/~sandy/alr4ed/" target="_blank"><em>Applied Linear Regression</em></a>, 4th edition. Wiley, 2013.</li>
+          <li><em>Statistics 8311: <a href="http://users.stat.umn.edu/~sandy/courses/8311/index.html" target="_blank">Linear Models</a></em> (Fall 2006).</li>
+        </ul>
+
+        <li>Jonathan Taylor. <em>Stats203: Introduction to Regression Models and Analysis of Variance</em> (<a href="bookshelf/Taylor_stats203_regression_diagnostics.pdf" target="_blank">diagnostics</a>, <a
+            href="bookshelf/Taylor_stats203_model_selection.pdf" target="_blank">model selection</a>).</li>
+        <li>Michael Kutner, Christopher Nachtsheim and John Neter. <em>Applied Linear Regression Models</em>, 4th edition. McGraw-Hill, 2004.</li>
+
+        <li>R packages</li>
+        <ul type="square">
+          <li><a href="https://cran.r-project.org/web/packages/car/index.html" target="_blank">car</a>: Companion to Applied Regression</li>
+          <li><a href="https://rdrr.io/cran/extremevalues/man/extremevalues.html" target="_blank">extremevalues</a>: Outlier detection and plot functions for univariate data.</li>
+          <li><a href="https://cran.r-project.org/web/packages/influence.ME/index.html" target="_blank">influence.ME</a>: Tools for Detecting Influential Data in Mixed Effects Models</li>
+          <li><a href="https://cran.r-project.org/web/packages/olsrr/" target="_blank">olsrr</a>: Tools for Building OLS Regression Models</li>
+          <li><a href="https://cran.r-project.org/web/packages/outliers/index.html" target="_blank">outliers</a>: Tests for outliers.</li>
+          <li><a href="https://cran.r-project.org/web/packages/OutlierDetection/index.html" target="_blank">OutlierDetection</a>: model based, distance based, dispersion based, depth based and density based.</li>
+          <li><a href="https://blog.revolutionanalytics.com/2018/03/outliers.html" target="_blank">OutliersOs</a>: Compare outlier detection methods.</li>
+          <li><a href="http://www.rdatamining.com/examples/outlier-detection" target="_blank">The Local Outlier Factor (LOF) algorithm</a>.</li>
+        </ul>
+
+        <li>Miscellaneous: <a href="https://rpubs.com/iabrady/residual-analysis" target="_blank">Residual Analysis in Linear Regression</a>, <a href="https://dzone.com/articles/doing-residual-analysis-post-regression-in-r" target="_blank">Doing
+            residual analysis post regression in R</a>, <a href="https://towardsdatascience.com/q-q-plots-explained-5aa8495426c0" target="_blank">Q-Q Plots Explained</a>.</li>
+      </ul>
+
+      <li>Additional: Robust Statistics</li>
+      <ul>
+        <li><a href="https://dornsife.usc.edu/labs/rwilcox/software/" target="_blank">Software by Rand Wilcox</a>.</li>
+        <li>UCLA IDRE: <a href="https://stats.idre.ucla.edu/r/dae/robust-regression/" target="_blank">Robust Regression</a>.</li>
+      </ul>
+
+      <li>Miscellaneous:</li>
+      <ul>
+        <li>Jie Ding, Vahid Tarokh, and Yuhong Yang: <a href="bookshelf/Ding_Tarokh_Yang_model-selection-techniques.pdf" target="_blank">Model Selection Techniques--An Overview</a>.</li>
+        <li>Jason Brownlee. <a href="https://machinelearningmastery.com/a-gentle-introduction-to-model-selection-for-machine-learning/" target="_blank">A Gentle Introduction to Model Selection for Machine Learning</a>.</li>
+        <li>Jason Brownlee. <a href="https://machinelearningmastery.com/probabilistic-model-selection-measures/" target="_blank">Probabilistic Model Selection with AIC, BIC, and MDL</a>.</li>
+        <li>Commonly used distributions and transformations: <a href="https://en.wikipedia.org/wiki/Pearson_distribution" target="_blank">Pearson distribution</a>, <a href="https://en.wikipedia.org/wiki/Fisher_transformation" target="_blank">Fisher
+            transformation</a>.</li>
+      </ul>
+    </ul>
+    <hr>
+
+    <h3>Optimization</h3>
+    <ul>
+      <li>The Big Picture: optimization <a href="https://neos-guide.org/content/optimization-taxonomy" target="_blank">taxonomy</a> and <a href="https://neos-guide.org/content/optimization-tree-alphabetical" target="_blank">problem types</a> from NEOS
+        Optimization Guide.</li>
+      <li>Jorge Nocedal and Stephen Wright. <a href="https://link.springer.com/book/10.1007/978-0-387-40065-5" target="_blank"><em>Numerical Optimization</em></a>. Springer, 2006. </li>
+      <li>Dimitris Bertsimas. MIT Open Course 15.093J / 6.255J: <em>Optimization Methods</em>. MIT OCW, Fall 2009. <a href="https://ocw.mit.edu/courses/sloan-school-of-management/15-093j-optimization-methods-fall-2009/index.htm"
+          target="_blank">Website</a>.</li>
+      <li>Michael J. Todd. <a href="https://people.orie.cornell.edu/miketodd/sdp2.html">Semidefinite Programming</a>.</li>
+      <li>Package scipy.optimize (<a href="https://docs.scipy.org/doc/scipy/reference/optimize.html" target="_blank">API reference</a>, <a href="https://docs.scipy.org/doc/scipy/reference/tutorial/optimize.html" target="_blank">tutorial</a>). Package
+        <a href="https://cvxopt.org/userguide/index.html" target="_blank">CVXOPT</a>. Package <a href="https://www.cvxpy.org/tutorial/intro/index.html" target="_blank">CVXPY</a>.
+      </li>
+    </ul>
+    <hr>
+
+    <h3>Data Science</h3>
+    <ul>
+      <li>Enterprise AI: <a href="https://www.accern.com/" target="_blank">Accern</a>, <a href="https://www.dataiku.com/" target="_blank">Dataiku</a>, <a href="https://www.datarobot.com/" target="_blank">DataRobot</a>, <a href="https://www.h2o.ai/"
+          target="_blank">H2O</a>, <a href="https://www.knime.com/" target="_blank">KNIME</a>, <a href="https://www.pecan.ai/" target="_blank">Pecan</a>, <a href="https://rapidminer.com/" target="_blank">RapidMinder</a>.</li>
+      <li>Jeroen Janssens: <a href="https://www.datascienceatthecommandline.com/" target="_blank"><em>Data Science at the Command Line</em></a>.</li>
+
+      <li>Machine Learning</li>
+      <ul type="circle">
+        <li>Yaser Abu-Mostafa. <a href="http://work.caltech.edu/telecourse" target="_blank">Learning From Data</a>: Lectures recorded at CalTech.</li>
+        <li>Kevin Murphy & Francis Bach. <em>Machine Learning: A Probabilistic Perspective</em>. The MIT Press, 2012.</li>
+        <li>Christopher Bishop. <em>Pattern Recognition and Machine Learning</em>. Springer, 2011.</li>
+        <li>Coursera. <a href="https://www.coursera.org/learn/machine-learning" target="_blank">Machine Learning</a> by Andrew Ng.</li>
+        <li>Andreas Mueller and Sarah Guido. <em>Introduction to Machine Learning with Python</em>. O'Reilly Media, 2016.</li>
+        <li>Sebastian Raschka & Vahid Mirjalili. <em>Python Machine Learning</em>, 2nd edition. Packt Publishing, 2017.</li>
+        <li><a href="https://scikit-learn.org/stable/" target="_blank">Scikit-Learn</a>.</li>
+      </ul>
+
+      <li>Visualization</li>
+      <ul type="circle">
+        <li><a href="https://www.r-graph-gallery.com/index.html" target="_blank">The R Graph Gallery</a>: <a href="https://www.r-graph-gallery.com/heatmap.html" target="_blank">heatmap</a>.</li>
+        <li><a href="https://plotly.com/r/" target="_blank">Plotly R Open Source Graphing Library</a>.</li>
+        <li><a href="https://matplotlib.org/gallery.html">Matplotlib's online gallery</a>.</li>
+        <li><a href="https://courses.edx.org/courses/course-v1:Microsoft+DAT207x+2T2019/course/" target="_blank">Analyzing and Visualizing Data with Power BI</a>.</li>
+        <li><a href="https://docs.bokeh.org/en/latest/" target="_blank">Bokeh</a>.</li>
+      </ul>
+    </ul>
+    <hr>
+
+    <h3>Programming Learning Paths</h3>
+
+    <h4>General Resources</h4>
+    <ul>
+      <li>Code Sandbox: <a href="https://codesandbox.io/" target="_blank">https://codesandbox.io/</a></li>
+      <li>DevDocs API Documentation: <a href="https://devdocs.io/" target="_blank">https://devdocs.io/</a></li>
+      <li>Free Code Camp: <a href="https://www.freecodecamp.org/" target="_blank">https://www.freecodecamp.org/</a></li>
+      <li>StarUML 3: <a href="http://staruml.io/" target="_blank">http://staruml.io/</a></li>
+    </ul>
+
+    <h4>Full Stack Web Development</h4>
+    <ul>
+      <li>The Big Picture of Web Development: <a href="https://www.w3schools.com/whatis/default.asp" target="_blank">Web Development Roadmaps and Mindmaps</a>.</li>
+      <ul type="circle">
+        <li><a href="bookshelf/img_frontend.jpg" target="_blank">Front-End Roadmap</a>, <a href="bookshelf/img_backend.jpg" target="_blank">Back-End Roadmap</a>.</li>
+      </ul>
+
+      <li>Full Stack Web Development: HTTP/CSS, <b>browser</b> (JavaScript, jQuery, Angular), <b>server</b> (PHP, ASP, Python, Node), <b>database</b> (SQL, MongoDB).</li>
+      <ul type="circle">
+        <li><a href="https://www.w3schools.com/whatis/whatis_fullstack.asp" target="_blank">What is Full Stack</a></li>
+        <li><a href="https://www.w3schools.com/whatis/whatis_fullstack_js.asp" target="_blank">What is Full Stack JavaScript</a></li>
+      </ul>
+
+      <li>The Big Picture of Database Technology: <a href="https://aws.amazon.com/nosql/" target="_blank">What are NoSQL databases</a>? <a href="https://www.youtube.com/watch?v=-pb-DkD6cWg&feature=youtu.be" target="_blank">Databases on AWS</a>, <a
+          href="https://www.youtube.com/watch?v=ujWV3-m1pLo&feature=youtu.be" target="_blank">Amazon DynamoDB</a>.</li>
+      <li>MDN: <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">Learn web development</a>.</li>
+      <li>Udemy: <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank"><em>The Complete 2019 Web Development Bootcamp</em></a> by Angela Yu, with <a
+          href="https://www.appbrewery.co/p/web-development-course-resources/" target="_blank">the App Brewery Web Development Course Resource List</a>.</li>
+
+      <li>Client Side:</li>
+      <ul type="circle">
+        <li>HTML (<a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN</a>.): create content.</li>
+        <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a> / <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS</a> / <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
+            target="_blank">MDN CSS reference</a>: describe content style.</li>
+        <li><a href="https://www.w3schools.com/bootstrap4/default.asp" target="_blank">Bootstrap 4</a>: responsive front-end framework with HTML and CSS based design templates. <a href="https://balsamiq.cloud/" target="_blank">Balsamiq Cloud</a>, <a
+            href="https://getbootstrap.com/" target="_blank">getbootstrap</a>, <a href="https://bootsnipp.com/" target="_blank">bootsnipp</a>.</li>
+        <li><a href="https://www.w3schools.com/js/js_objects.asp" target="_blank">JavaScript</a> / <a href="https://www.w3schools.com/w3js/default.asp" target="_blank">W3.JS</a>: programming language of HTML and the browser. <a
+            href="https://github.com/rwaldron/idiomatic.js" target="_blank">Style guide</a>.</li>
+        <li><a href="https://www.w3schools.com/jquery/default.asp" target="_blank">jQuery</a>: JavaScript library to simplify JavaScript programming; after JavaScript version 5 (2009), most utilities can be solved easily by standard JavaScript.</li>
+        <li><a href="https://www.w3schools.com/react/default.asp" target="_blank">React</a>: JavaScript library for building user interfaces and single page applications. <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">Tutorial:
+            Intro to React</a>. <a href="https://airbnb.io/javascript/react/" target="_blank">Airbnb React/JSX Style Guide</a>.</li>
+        <li><a href="https://www.w3schools.com/angular/default.asp" target="_blank">AngularJS</a>: HTML extension.</li>
+        <li><a href="https://www.w3schools.com/js/js_htmldom.asp" target="_blank">HTML DOM</a> / <a href="https://www.w3schools.com/xml/dom_intro.asp" target="_blank">XML DOM</a>: Document Object Model and programming interface of a document.</li>
+        <li><a href="https://www.w3schools.com/js/js_ajax_intro.asp" target="_blank">AJAX</a>: a web development technique that uses a combination of XMLHttpRequest (data request) and JavaScript / HTML DOM (data consumption).</li>
+        <li><a href="https://www.w3schools.com/js/js_json_intro.asp" target="_blank">JSON</a>, <a href="https://www.w3schools.com/xml/default.asp" target="_blank">XML</a>: data exchange and data storage.</li>
+      </ul>
+
+      <li>Programming: <a href="https://www.w3schools.com/python/default.asp" target="_blank">Python</a> (to work with JSON, MySQL, MongoDB), <a href="https://www.w3schools.com/cs/default.asp" target="_blank">C#</a> (to work with ASP.NET).</li>
+
+      <li>Server Side:</li>
+      <ul type="circle">
+        <li><a href="https://www.w3schools.com/nodejs/default.asp" target="_blank">Node.js</a>: a JavaScript library that executes JavaScript code outside of a browser.</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs" target="_blank">Express.js</a>: a minimal and flexible Node.js web application framework.</li>
+        <li><a href="https://ejs.co/" target="_blank">EJS</a>: a simple templating language that lets you generate HTML markup with plain JavaScript.</li>
+        <li><a href="https://www.w3schools.com/php/default.asp" target="_blank">PHP</a>, <a href="https://www.w3schools.com/asp/default.asp" target="_blank">ASP</a>: server side scripting languages.</li>
+        <li><a href="https://www.w3schools.com/sql/default.asp" target="_blank">SQL</a>, <a href="https://dev.mysql.com/doc/connector-python/en/" target="_blank">MySQL Connector/Python</a>: tutorials for relational database.</li>
+        <li><a href="https://docs.mongodb.com/manual/tutorial/" target="_blank">MongoDB</a>: tutorials for nonrelational database.</li>
+        <li><a href="https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/" target="_blank">Mongoose</a>: an Object Data Modeling (ODM) library for MongoDB and Node.js.</li>
+        <li><a href="https://restfulapi.net/rest-api-design-tutorial-with-example/" target="_blank">REST</a>: an architectural style for distributed hypermedia systems.</li>
+        <li>Authentication & Security: <a href="https://haveibeenpwned.com/">haveibeenpwned</a>, <a href="https://www.npmjs.com/package/bcrypt">bcrypt</a>, <a href="http://www.passportjs.org/">Passport.js</a>, <a href="https://oauth.net/2/">OAuth
+            2.0</a>.</li>
+      </ul>
+
+      <li>Other References:</li>
+      <ul type="circle">
+        <li>Artur Ejsmont. <em>Web Scalability for Startup Engineers</em>. McGraw-Hill Education, 2015.</li>
+        <li>Mikito Takada. <a href="http://book.mixu.net/distsys/" target="_blank"><em>Distributed Systems for Fun and Profit</em></a>.</li>
+        <li>Martin Kleppmann. <em>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</em>. O'Reilly, 2017.</li>
+        <li>Oracle. <a href="https://docs.oracle.com/cd/B28359_01/server.111/b28320/toc.htm" target="_blank">Database Reference</a>.</li>
+        <li><a href="https://www.techonthenet.com/index.php" target="_blank">TechOnTheNet</a>. Tutorials on SQL, Oracle/PLSQL, SQL Server, MySQL, MariaDB, PostgreSQL, SQLite.</li>
+        <li><a href="https://www.sqlalchemy.org/" target="_blank">SQL Alchemy</a>.</li>
+      </ul>
+    </ul>
+
+    <h4>Python</h4>
+    <ul>
+      <li>Get Started: Essentials</li>
+      <ul type="circle">
+        <li>Jake VanderPlas. <a href="https://jakevdp.github.io/WhirlwindTourOfPython/" target="_blank"><em>A Whirlwind Tour of Python</em></a>. O'Reilly Media, 2016.</li>
+        <li>Jake VanderPlas. <a href="https://jakevdp.github.io/PythonDataScienceHandbook/" target="_blank"><em>Python Data Science Handbook</em></a>. O'Reilly Media, 2016.</li>
+        <li>Theodore Petrou: <a href="https://medium.com/dunder-data/minimally-sufficient-pandas-a8e67f2a2428" target="_blank">Minimally Sufficient Pandas</a>, <a
+            href="https://medium.com/dunder-data/minimally-sufficient-pandas-cheat-sheet-34f3a6888c36" target="_blank">Minimally Sufficient Pandas Cheat Sheet</a>.</li>
+        <li>Theodore Petrou. <em>Pandas Cookbook: Recipes for Scientific Computing, Time Series Analysis and Data Visualization</em>. Packt Publishing, 2017.</li>
+        <li>W3Schools: <a href="https://www.w3schools.com/python/default.asp" target="_blank">Python Tutorial</a>.</li>
+      </ul>
+
+      <li>Get Started: Miscellaneous</li>
+      <ul type="circle">
+        <li>IDE: <a href="bookshelf/Jemian_PyDev.pdf" target="_blank">PyDev</a>, <a href="https://docs.spyder-ide.org/current/index.html" target="_blank">Spyder</a>, <a href="https://www.jetbrains.com/pycharm/learn/" target="_blank">PyCharm</a>, <a
+            href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank">Visual Studio</a>.</li>
+        <li>Anaconda. 1) <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/" target="_blank"><em>Conda User Guide</em></a>. 2) <a href="https://docs.anaconda.com/anaconda/navigator/getting-started/" target="_blank"><em>Getting Started
+              with Anaconda Navigator</em></a>.</li>
+        <li>Style Guide: <a href="https://www.python.org/dev/peps/pep-0008/" target="_blank">PEP8 -- Style Guide for Python Code</a>, <a href="https://google.github.io/styleguide/pyguide.html" target="_blank">Google Python Style Guide</a>, <a
+            href="bookshelf/Python_Style-Guide.docx" target="_blank">cheat sheet</a>.</li>
+        <li>TutorialsPoint.com: <a href="https://www.tutorialspoint.com/python3/index.htm" target="_blank"><em>Python 3 Tutorial</em></a>.</li>
+        <li>Python.org: <a href="https://docs.python.org/3/tutorial/index.html" target="_blank">The Python Tutorial</a>, <a href="https://docs.python.org/3/library/" target="_blank">The Python Standard Library</a>, <a
+            href="https://docs.python.org/3/howto/index.html" target="_blank">Python HOWTOs</a>.</li>
+        <li>GeeksforGeeks: <a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank"><em>Python Programming Language</em></a>.</li>
+        <li>Wes McKinney. <a href="https://wesmckinney.com/pages/book.html" target="_blank"><em>Python for Data Analysis</em></a>, 2nd edition. O'Reilly Media, 2017.</li>
+        <li>Magnus L. Hetland. Beginning Python: <em>From Novice to Professional</em>, 3rd edition. Apress, 2017.</li>
+        <li>Kenneth Reitz & Tanya Schlusser. <a href="https://docs.python-guide.org/" target="_blank"><em>The Hitchhiker's Guide to Python: Best Practices for Development</em></a>. O'Reilly Media, 2016.</li>
+        <li>Python common knowledge: <a href="https://docs.python.org/3/reference/import.html">The import system</a>, <a href="https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html">The Definite Guide to Python import
+            Statements</a>.</li>
+        <li>Pandas common knowledge: <a href="https://wesmckinney.com/blog/nycpython-1102012-a-look-inside-pandas-design-and-development/">A look inside pandas design and development</a>, <a href="https://www.dataquest.io/blog/settingwithcopywarning/"
+            target="_blank">SettingwithCopyWarning</a>.</li>
+        <li>Pandas Cheat Sheet. <a href="bookshelf/Pandas_Cheat_Sheet.pdf" target="_blank">Data Wrangling with Pandas</a>, <a href="bookshelf/PandasPythonForDataScience.pdf" target="_blank">Python for Data Science Pandas Basics</a>, <a
+            href="https://www.kaggle.com/grroverpr/pandas-cheatsheet" target="_blank">Kaggle Pandas Cheatsheet</a>.</li>
+      </ul>
+
+      <li>Intermediate</li>
+      <ul type="circle">
+        <li>David Beazley and Brian K. Jones. <em>Python Cookbook</em>, 3rd edition. O'Reilly Media, 2013.</li>
+        <li>Luciano Ramalho. <em>Fluent Python</em>. O'Reilly Media, 2015.</li>
+        <li>Brett Slatkin. <a href="https://effectivepython.com/" target="_blank"><em>Effective Python: 59 Specific Ways to Write Better Python</em></a>. Addison-Wesley Professional, 2015.</li>
+        <li>Paul Deitel. <a href="https://www.oreilly.com/library/view/python-fundamentals/9780135917411/" target="_blank">Python Fundamentals LiveLessons</a>. Prentice Hall, 2019.</li>
+        <li>Julien Danjou. <em>Serious Python: Black-Belt Advice on Deployment, Scalability, Testing, and More</em>. No Starch Press, 2018.</li>
+        <li><a
+            href="https://www.oreilly.com/search/?query=python&extended_publisher_data=true&highlight=true&include_assessments=false&include_case_studies=true&include_courses=true&include_playlists=true&include_collections=true&include_notebooks=true&is_academic_institution_account=false&source=user&sort=relevance&facet_json=true&page=0&include_facets=false&include_scenarios=true&include_sandboxes=true&json_facets=true"
+            target="_blank">O'Reilly's Python resource</a>.</li>
+      </ul>
+
+      <li>Python Web Development: Django stack (JavaScript - Python - Django - MySQL)</li>
+      <ul type="circle">
+        <li>Matt Makai: <a href="https://www.fullstackpython.com/" target="_blank">Full Stack Python</a>.</li>
+        <li><a href="https://www.fullstackpython.com/web-frameworks.html" target="_blank">Web Framworks</a>.</li>
+      </ul>
+
+      <li>For Python Package Developers</li>
+      <ul type="circle">
+        <li>Python.org: <a href="https://devguide.python.org/" target="_blank">Python Developer's Guide</a>.</li>
+        <li>API documentation generator: <a href="https://pdoc3.github.io/pdoc/" target="_blank">pdoc</a> (for i in *.py; do pdoc --html $i; done), <a href="https://docs.python.org/3/library/pydoc.html" target="_blank">pydoc</a> (for i in *.py; do
+          pydoc -w `echo $i | sed 's/.py//'`; done).</li>
+        <li>Static code analysis: <a href="https://pypi.org/project/pyflakes/" target="_blank">pyflakes</a>, <a href="https://www.pylint.org/" target="_blank">pylint</a> (<a href="https://pythonspeed.com/articles/pylint/" target="_blank">how to use
+            it</a>), <a href="https://pypi.org/project/pycodestyle/" target="_blank">pycodestyle</a>, <a href="https://pypi.org/project/autopep8/0.8/" target="_blank">autopep8</a>.</li>
+        <li>Code visualizaiton: <a href="https://waterprogramming.wordpress.com/2015/07/29/pycharm-as-a-python-ide-for-generating-uml-diagrams/" target="_blank">PyCharm</a>, <a href="https://pypi.org/project/pyreverse/" target="_blank">pyreverse</a>
+          (pyreverse `ls *.py | sed 's/.py//' | tr '\n' ' '`), <a href="https://pycallgraph.readthedocs.io/en/master/" target="_blank">Python Call Graph</a>, <a href="http://graphviz.it/#/new" target="_blank">Graphviz it!</a>, <a
+            href="http://www.webgraphviz.com/" target="_blank">webgraphviz</a>, <a href="https://modeling-languages.com/uml-tools/" target="_blank">UML tools 2019</a>.</li>
+        <li>Testing: <a href="https://docs.python.org/3/library/unittest.html" target="_blank">unittest</a>, <a href="https://docs.python.org/2/library/profile.html" target="_blank">the Python profilers</a>.</li>
+        <li>Virtual box: <a href="https://virtualenv.pypa.io/en/latest/" target="_blank">virtualenv</a> (a tool to create isolated Python environments).</li>
+        <li>GitHub: <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Mastering Markdown</a>.</li>
+
+        <li>Deployment</li>
+        <ul type="square">
+          <li><a href="https://docs.python.org/3/tutorial/modules.html#packages" target="_blank">Python Packages</a></li>
+          <li><a href="https://packaging.python.org/tutorials/installing-packages/" target="_blank">Installing Packages</a></li>
+          <li><a href="https://pip.pypa.io/en/stable/reference/pip_freeze/" target="_blank">pip freeze</a>, <a href="https://pip.pypa.io/en/stable/reference/pip_install/" target="_blank">pip install</a>.</li>
+          <li><a href="https://packaging.python.org/tutorials/packaging-projects/" target="_blank">Packaging Python Projects</a></li>
+          <li><a href="https://packaging.python.org/" target="_blank">Python Packaging User Guide</a></li>
+          <li><a href="https://packaging.python.org/overview/" target="_blank">An Overview of Packaging for Python</a></li>
+          <li><a href="https://setuptools.readthedocs.io/en/latest/setuptools.html" target="_blank">Building and Distributing Packages with Setuptools</a></li>
+          <li><a href="https://packaging.python.org/guides/distributing-packages-using-setuptools/" target="_blank">Packaging and distributing projects</a></li>
+          <li>DLL load failure: CONDA_DLL_SEARCH_MODIFICATION_ENABLE=1 (e.g. <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/troubleshooting.html#numpy-mkl-library-load-failed" target="_blank">NumPy MKL library load failed</a>)</li>
+          <li>PyCharm virtual environment: <a href="https://arcade.academy/venv_install/index.html" target="_blank">setting up</a>, <a href="https://stackoverflow.com/questions/51499950/where-do-i-put-my-python-files-in-the-venv-folder"
+              target="_blank">venv folder</a>.</li>
+          <li><a href="https://stackoverflow.com/questions/15031694/installing-python-packages-from-local-file-system-folder-to-virtualenv-with-pip" target="_blank">pip install from local file system folder</a></li>
+        </ul>
+      </ul>
+
+      <li>Jupyter</li>
+      <ul type="circle">
+        <li>Karlijn Willems. <a href="https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook" target="_blank">Jupyter Notebook Tutorial</a>.</li>
+        <li><a href="https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks" target="_blank">A gallery of interesting Jupyter Notebooks</a>.</li>
+        <li><a href="https://nbviewer.jupyter.org/" target="_blank">Jupyter nbviewer</a>.</li>
+      </ul>
+
+      <li>SciPy</li>
+      <ul type="circle">
+        <li>scipy-lectures.org: <a href="http://scipy-lectures.org/" target="_blank">Scipy Lecture Notes</a>.</li>
+        <li><a href="https://scipy-cookbook.readthedocs.io/" target="_blank">SciPy Cookbook</a>.</li>
+        <li>docs.scipy.org: <a href="https://numpy.org/doc/stable/user/quickstart.html" target="_blank">NumPy Quickstart Tutorial</a>, <a href="https://docs.scipy.org/doc/" target="_blank">NumPy and Scipy Documentation</a>, <a
+            href="https://docs.scipy.org/doc/scipy/reference/tutorial/index.html" target="_blank">SciPy Tutorial</a>.</li>
+      </ul>
+
+      <li>xlwings: <a href="https://docs.xlwings.org/en/stable/quickstart.html" target="_blank">Quickstart</a>, <a href="https://training.zoomeranalytics.com/p/xlwings" target="_blank">video course</a>.</li>
+
+      <li>Frequently used libraries</li>
+      <ul type="circle">
+        <li><a href="https://docs.python.org/3/library/argparse.html" target="_blank">argparse</a>: <a href="https://docs.python.org/2/howto/argparse.html" target="_blank">Argparse Tutorial</a>.</li>
+        <li><a href="https://pypi.org/project/boto3/" target="_blank">boto3</a>: the AWS SDK for Python developers to use Amazon S3 and EC2.</li>
+        <li><a href="https://pypi.org/project/config/" target="_blank">config</a>: a hierarchical configuration module.</li>
+        <li><a href="https://oracle.github.io/python-cx_Oracle/" target="_blank">cx_Oracle</a>: module that enables access to Oracle Database.</li>
+        <li><a href="https://docs.python.org/3/library/datetime.html" target="_blank">datetime</a>: basic date and time types.</li>
+        <li><a href="https://docs.python.org/3/library/functools.html" target="_blank">functools</a>: for higher-order functions: functions that act on or return other functions.</li>
+        <li><a href="https://github.com/gleitz/howdoi" target="_blank">howdoi</a>: instant coding answers via the command line.</li>
+        <li><a href="https://docs.python.org/3/library/json.html" target="_blank">json</a>: JSON encoder and decoder.</li>
+        <li><a href="https://docs.python.org/3/library/logging.html" target="_blank">logging</a>: <a href="https://docs.python.org/3/howto/logging.html" target="_blank">logging HOWTO</a>, <a href="https://docs.python.org/3/howto/logging-cookbook.html"
+            target="_blank">logging cookbook</a>.</li>
+        <li><a href="https://docs.python.org/3/library/logging.config.html" target="_blank">logging.config</a>: logging configuration.</li>
+        <li><a href="https://pypi.org/project/mysql-connector-python/" target="_blank">mysql.connector</a>: MySQL driver.</li>
+        <li><a href="https://docs.python.org/3/library/os.html" target="_blank">os</a>: miscellaneous operating system interfaces.</li>
+        <li><a href="https://pandas.pydata.org/" target="_blank">pandas</a>: Python data analysis library, <a href="https://pandas.pydata.org/pandas-docs/stable/" target="_blank">pandas.0.24.1 documentation</a>.</li>
+        <li><a href="https://effbot.org/" target="_blank">PythonDoc</a>: API documentation tool, similar to JavaDoc.</li>
+        <li><a href="https://pypi.org/project/requests/2.7.0/" target="_blank">requests</a>: an Apache2 licensed HTTP library.</li>
+        <li><a href="https://docs.python.org/3/library/sys.html" target="_blank">sys</a>: system-specific parameters and functions.</li>
+      </ul>
+    </ul>
+
+    <h4>Java</h4>
+    <ul>
+      <li>Java Mind Map</li>
+      <ul type="circle">
+        <li><a href="https://www.javacodegeeks.com/2013/11/a-mindmap-for-java-developer-interviews.html" target="_blank">A MindMap for Java Developer Interviews</a>.</li>
+        <li><a href="https://www.oracle.com/topics/technologies/newtojava-java-technology-concept-map.html" target="_blank">Java Technology Concept Map</a>.</li>
+      </ul>
+
+      <li>For Java Developers</li>
+      <ul type="circle">
+        <li>Code visualization: <a href="https://www.objectaid.com/install-objectaid" target="_blank">ObjectAid UML Explorer</a> (<a href="https://www.youtube.com/watch?v=0Zlh56mTS6c">Youtube tutorial</a>, <a
+            href="https://stackoverflow.com/questions/1230889/difference-between-association-and-dependency">association-vs-dependency</a>), <a
+            href="https://www.ibm.com/support/knowledgecenter/SS8PJ7_9.6.1/com.ibm.xtools.rsa_base.legal.doc/helpindex_rsa_base.html">IBM Rational Software Architect Designer/a>.</li>
+        <li>Entity Relationship Diagram: <a href="http://ermaster.sourceforge.net/content/manual/en/index.html" target="_blank">ER Master</a>, <a href="https://www.lucidchart.com/pages/er-diagrams" target="_blank">ER Diagram Tutorial</a>.</li>
+        <li>Java Profiler: <a href="https://www.ej-technologies.com/products/jprofiler/overview.html" target="_blank">JProfiler</a>, <a href="https://www.yourkit.com/java/profiler/" target="_blank">YourKit</a>.</li>
+        <li><a href="https://www.jrebel.com/resources" target="_blank">JRebel Resources</a>: <a href="bookshelf/must-have-cheat-sheets-for-java-developers.pdf" target="_blank">Must-Have Cheat Sheets for Java Developers</a>.</li>
+        <li>Deitel: <a href="bookshelf/Deitel_Java-How-to-Program_appendix_m_using_javadoc.pdf" target="_blank">Creating Documentation with javadoc</a>.</li>
+
+        <li>Maven</li>
+        <ul type="square">
+          <li>Sonatype. 1) <a href="bookshelf/maven-by-example.pdf" target="_blank"><em>Maven by Example</em></a>. 2) <a href="bookshelf/maven-the-complete-reference.pdf" target="_blank"><em>Maven: The Complete Reference</em></a>.</li>
+          <li>Balaji Varanasi & Sudha Belida. <em>Introducing Maven</em>. Apress, 2014.</li>
+          <li>Raghuram Bharathan. <a href="https://subscription.packtpub.com/book/application_development/9781785286124" target="_blank"><em>Apache Maven Cookbook</em></a>. Packt Publishing, 2015.</li>
+          <li>Jason Taylor. <a href="https://www.udemy.com/course/maven-crash-course/" target="_blank"><em>Maven Crash Course: Step-by-Step Introduction for Beginners</em></a>. Udemy.</li>
+          <li>Maven Central Repository. 1) <a href="https://repo.maven.apache.org/maven2/">Repo</a>. 2) <a href="https://search.maven.org/">Search Engine</a>. 3) <a href="https://repository.sonatype.org/#welcome">Nexus Repository Manager</a>.</li>
+          <li>Apache Maven Project. 1) <a href="https://maven.apache.org/guides/">Maven Documentation</a>. 2) <a href="https://maven.apache.org/general.html">Frequently Asked Technical Questions</a>. 3) <a href="https://maven.apache.org/plugins/maven-javadoc-plugin/index.html">Apache Maven Javadoc Plugin</a>. 4) <a href="https://maven.apache.org/articles.html">Books and Resources</a>.</li>
+          <li><a href="https://www.infoworld.com/article/2071772/the-maven-2-pom-demystified.html" target="_blank">The Maven 2 POM demystified</a>.</li>
+          <li><a href="bookshelf/MavenQuickReferenceCard.pdf" target="_blank">Maven Quick Reference Card</a>.</li>
+          <li><a href="bookshelf/pom.xml" target="_blank">Sample pom.xml</a>.</li>
+        </ul>
+      </ul>
+
+      <li>Tutorials & Courses</li>
+      <ul type="circle">
+        <li>TutorialsPoint.com: <a href="https://www.tutorialspoint.com/eclipse/" target="_blank"><em>Eclipse Tutorial</em></a>.</li>
+        <li>GeeksforGeeks: <a href="https://www.geeksforgeeks.org/java/" target="_blank"><em>Java Programming Language</em></a>. (<a href="https://www.geeksforgeeks.org/java-singleton-design-pattern-practices-examples/" target="_blank">Thread safe Java
+            Singleton design pattern</a>.)</li>
+        <li><a href="http://tutorials.jenkov.com/" target="_blank">Jenkov.com</a>: Java Date and Time, Java IO (Serializable), Java JDBC, Java JSON, Java Reflection.</li>
+        <li>Baeldung: <em>Java, Spring and Web</em>. (<a href="https://www.baeldung.com/a-guide-to-java-enums">A Guide to Java Enums</a>. <a href="https://www.baeldung.com/java-enum-values">Attaching Values to Java Enum</a>.)</li>
+        <li>Oracle. <a href="https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html" target="_blank"><em>Java Tutorials Learning Paths (for JDK 8)</em></a>.</li>
+        <li>Paul Deitel. <a href="https://www.informit.com/store/java-fundamentals-livelessons-parts-i-ii-iii-and-iv-9780133489347" target="_blank"><em>Java Fundamentals LiveLessons Parts I, II, III, and IV</em></a>. Prentice Hall, 2016.</li>
+        <li>Dheeru Mundluru. <a href="https://www.udemy.com/course/java-in-depth-become-a-complete-java-engineer/" target="_blank"><em>Java In-Depth: Becoming a Complete Java Engineer</em></a>. Last updated 10/2018, Udemy.</li>
+      </ul>
+
+      <li>Desk References</li>
+      <ul type="circle">
+        <li>Cay S. Horstmann. <em>Core Java for the Impatient (Covers Java SE 8)</em>. Addison-Wesley Professional, 2015.</li>
+        <li>Robert Liguori & Patricia Liguori. <em>Java 8 Pocket Guide: Instant Help for Java Programmers</em>. O'Reilly Median, 2014.</li>
+        <li>Joshua Bloch. <em>Effective Java</em>, 3rd edition. Addison-Wesley Professional, 2018.</li>
+        <li>Herbert Schildt. <em>Java: The Complete Reference</em>, 10th edition. McGraw-Hill Education, 2017.</li>
+      </ul>
+
+      <li>Oracle. 1) <a href="https://docs.oracle.com/javase/8/docs/api/">Java SE 8 API Specification</a>. 2) <a href="https://docs.oracle.com/database/121/JAJDB/overview-summary.html">Database JDBC API Reference</a>. 3) <a
+          href="https://www.oracle.com/technical-resources/articles/java/serializationapi.html">Java Serialization API</a>.</li>
+      <li>Apache. 1) <a href="https://commons.apache.org/proper/commons-lang/apidocs/index.html?help-doc.html">Apache Commons Lang 3.9-SNAPSHOT API</a>. 2) <a href="https://logging.apache.org/log4j/2.x/javadoc.html">Log4j 2 Javadoc API
+          Documentation</a>. 3) <a href="https://commons.apache.org/proper/commons-math/">Commons Math</a>.</li>
+      <li>Style Guide: 1) <a href="https://www.oracle.com/java/technologies/javase/codeconventions-contents.html">Oracle</a>. 2) <a href="https://google.github.io/styleguide/javaguide.html">Google Java Style Guide</a>. 3) <a
+          href="http://cr.openjdk.java.net/~alundblad/styleguide/index-v6.html">OpenJDK Java Style Guidelines</a>. 4) <a href="https://www.oreilly.com/library/view/java-8-pocket/9781491901083/ch01.html"><em>Java 8 Pocket Guide Naming
+            Conventions</em></a>. 5) <a href="https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#styleguide">How to Write Doc Comments for the Javadoc Tool</a>.</li>
+      <li>Angelika Langer. <a href="http://www.angelikalanger.com/GenericsFAQ/JavaGenericsFAQ.pdf" target="_blank"><em>Java Generics FAQs</em></a>.</li>
+      <li>Interviews: <a href="https://www.javacodegeeks.com/java-interview-questions.html">150 Java Interview Questions and Answers</a> (<a href="https://www.javacodegeeks.com/minibook/java-interview-questions">ebook</a>), <a
+          href="http://www.developersbook.com/corejava/interview-questions/corejava-interview-questions-faqs.php">Java Interview Questions</a>, <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/collections/designfaq.html"
+          target="_blank">Java Collections API Design FAQ</a>.</li>
+    </ul>
+
+    <h4>R</h4>
+    <ul>
+      <li>Jared P. Lander. <em>R for Everyone: Advanced Analytics and Graphics</em>. Addison-Wesley Professional, 2013.</li>
+      <li>Jared P. Lander. <a href="https://www.oreilly.com/library/view/r-programming-livelessons/9780133578867/" target="_blank"><em>R Programming LiveLessons</em></a>. Addison-Wesley Professional, 2013.</li>
+      <li>Hadley Wickham & Garrett Grolemund. <a href="https://r4ds.had.co.nz/" target="_blank"><em>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</em></a>. O'Reilly Media, 2017.</li>
+      <li>Winston Chang. <a href="http://www.cookbook-r.com/" target="_blank">Cookbook for R</a>.</li>
+      <li>Paul Teetor. <em>R Cookbook: Proven Recipes for Data Analysis, Statistics, and Graphics</em>. O'Reilly Media, 2011.</li>
+      <li>Winston Chang. <em>R Graphics Cookbook: Practical Recipes for Visualizing Data</em>. O'Reilly Media, 2013.</li>
+      <li>Hadley Wickham. <a href="https://adv-r.hadley.nz/" target="_blank"><em>Advanced R</em></a>, 2nd edition. Chapman & Hall/CRC, 2014.</li>
+      <li>Yihui Xie, J. J. Allaire, and Garrett Grolemund. <a href="https://bookdown.org/yihui/rmarkdown/" target="_blank"><em>R Markdown: The Definitive Guide</em></a>. Chapman and Hall/CRC; 1 edition (July 19, 2018). Amazon.</li>
+      <li>Gang Su: <a href="https://towardsdatascience.com/a-comprehensive-list-of-handy-r-packages-e85dad294b3d" target="_blank">A comprehensive list of handy R packages</a>.</li>
+      <li>Tidyverse.org: <a href="https://ggplot2.tidyverse.org/reference/index.html" target="_blank">ggplot2 Reference</a>.</li>
+      <li><a href="https://rstudio.com/resources/cheatsheets/" target="_blank">RStudio Cheat Sheets</a>.</li>
+      <li><a href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html" target="_blank">R Language Definition</a>.</li>
+
+      <li>For R Developers</li>
+      <ul type="circle">
+        <li>Hilary Parker: <a href="https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/" target="_blank">Writing an R package from scratch</a>.</li>
+        <li>Fong Chun Chan: <a href="https://tinyheero.github.io/jekyll/update/2015/07/26/making-your-first-R-package.html" target="_blank">Making your first R package</a>.</li>
+        <li>Hadley Wickham: <a href="https://r-pkgs.org/" target="_blank"><em>R Packages</em></a>.</li>
+        <li><a href="https://cmdlinetips.com/2019/08/how-to-make-a-r-package-from-scratch-using-rstudio/" target="_blank">Make an R Package from Scratch using RStudio</a>.</li>
+        <li><a href="http://adv-r.had.co.nz/Style.html" target="_blank">Wickham's R style guide</a>.</li>
+        <li>Miscellaneous: <a href="https://win-vector.com/2018/09/01/r-tip-how-to-pass-a-formula-to-lm/" target="_blank">Pass a formula to lm</a>, <a href="https://www.accelebrate.com/library/how-to-articles/r-rstudio-library" target="_blank">install
+            packages to a customized directory</a>, <a href="https://rpubs.com/tomhopper/windows_nonadmin_install" target="_blank">install R without admin privileges</a>.</li>
+      </ul>
+    </ul>
+
+    <h4>C/C++</h4>
+    <ul>
+      <li>Yale N. Patt & Sanjay J. Patel. <em>Introduction to Computing Systems: From Bits and Gates to C and Beyond</em>, 2nd edition. McGraw-Hill Education, 2003.</li>
+      <li>Brian W. Kernighan & Dennis M. Ritchie. <em>The C Programming Language</em>, 2nd edition. Prentice Hall, 1988.</li>
+      <li>Cplusplus.com. <a href="http://www.cplusplus.com/doc/tutorial/" target="_blank">C++ Tutorials</a>.</li>
+      <li>Paul Deitel. <em>C++ Fundamentals I and II LiveLessons</em>. Prentice Hall, 2010. <a href="https://www.oreilly.com/library/view/c-fundamentals-i/9780137045150/" target="_blank">Safari Books Online</a>.</li>
+      <li>Stephen Prata. <em>C++ Primer Plus</em>, 5th edition. SAMS, 2004.</li>
+      <li>Stanley B. Lippman, Josee Lajoie, & Barbara E. Moo. <em>C++ Primer</em>, 5th edition. Addison-Wesley Professional, 2012.</li>
+      <li>Stephen C. Dewhurst. <em>C++ Common Knowledge</em>. Addison-Wesley Professional, 2005.</li>
+      <li>Stanley B. Lippman. <em>Essential C++</em>. Addison-Wesley Professional, 1999.</li>
+      <li>Scott Meyers. <em>Effective C++: 55 Specific Ways to Improve Your Programs and Designs</em>, 3rd edition. Addison-Wesley Professional, 2005.</li>
+      <li>Isocpp.org. <a href="https://isocpp.org/faq" target="_blank">C++ FAQ</a>.</li>
+      <li>Heard at JPMC (2015): <a href="bookshelf/JPMC_coding-guidelines.docx" target="_blank">C++ Coding Guidelines</a>, <a href="bookshelf/JPMC_mfm-cpp-coding-standards.docx" target="_blank">C++ Coding Standards</a>.</li>
+    </ul>
+
+    <h4>Shell</h4>
+    <ul>
+      <li>Software Carpentry Foundation: <a href="https://swcarpentry.github.io/shell-novice/" target="_blank"><em>Shell Tutorial</em></a>.</li>
+      <li>Stanford CS Education Library: <a href="bookshelf/Stanford_unix-programming-tools.pdf" target="_blank"><em>Unix Programming Tools</em></a>.</li>
+      <li>Bruce Barnett: <a href="https://www.grymoire.com/Unix/Quote.html#TOC" target="_blank"><em>UNIX SHELL Quote Tutorial</em></a>.</li>
+      <li><a href="https://cygwin.com/cygwin-ug-net/cygwin-ug-net.html" target="_blank">Cygwin User's Guide</a>.</li>
+      <li>Mehryar Mohri. [V22.0468-001] <a href="https://cs.nyu.edu/~mohri/unix08/" target="_blank">Spring 2008 Unix Tools</a>.</li>
+      <li>Chris Johnson. <em>Pro Bash Programming: Scripting the Linux Shell</em>. Apress, 2009.</li>
+      <li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/" target="_blank">GNU Emacs Manual</a>.</li>
+    </ul>
+
+    <h4>Perl</h4>
+    <ul>
+      <li>Greg London. <a href="https://www.perl.org/books/impatient-perl/" target="_blank"><em>Impatient Perl</em></a>.</li>
+      <li>Simon Cozens. <a href="https://www.perl.org/books/beginning-perl/" target="_blank"><em>Beginning Perl</em></a>.</li>
+      <li>James Lee. <em>Beginning Perl</em>, 3rd edition. Apress, 2010.</li>
+      <li>Gabor Szabo: <a href="https://perlmaven.com/perl-tutorial" target="_blank"><em>Beginner Perl Maven</em></a>, <a href="https://perlmaven.com/beginner-perl-maven-video-course" target="_blank"><em>Beginner Perl Maven video course</em></a>.</li>
+      <li>Perldoc.perl.org: <a href="https://perldoc.perl.org/perl#Overview" target="_blank">Manual, Reference, and Modules</a>. </li>
+    </ul>
+
+    <h4>Design Patterns and Software Architecture</h4>
+    <ul>
+      <li>Erich Gamma, Richard Helm, Ralph Johnson & John Vlissides. <em>Design Patterns: Elements of Reusable Object-Oriented Software</em>. Addison-Wesley Professional, 1994.</li>
+      <li>TutorialsPoint.com. <a href="https://www.tutorialspoint.com/design_pattern/" target="_blank"><em>Design Patterns in Java Tutorial</em></a>.</li>
+      <li>Oodesign.com: <a href="https://www.oodesign.com/" target="_blank">Design Patterns</a>.</li>
+      <li>HowTODoInJava: <a href="https://howtodoinjava.com/gang-of-four-java-design-patterns/" target="_blank">GoF Design Patterns</a>.</li>
+      <li>BlackWasp: <a href="http://www.blackwasp.co.uk/gofpatterns.aspx" target="_blank">Gang of Four Design Patterns</a>.</li>
+      <li>Robert C. Martin. <a href="https://archive.org/details/CleanArchitecture" target="_blank"><em>Clean Architecture: A Craftsman's Guide to Software Structure and Design</em></a>. Prentice Hall, 2017.</li>
+      <li>Robert C. Martin.<em>Clean Code: A Handbook of Agile Software Craftsmanship</em>. Prentice Hall, 2008.</li>
+      <li>Stanford University. Programming Paradigms (by Jerry Cain, 2008). <a href="https://www.youtube.com/watch?v=Ps8jOj7diA0" target="_blank">YouTube</a>.</li>
+    </ul>
+
+    <h4>DevOps</h4>
+    <ul>
+      <li>Git cheat sheet: <a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet" target="_blank">Atlassian</a>, <a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">GitHub</a>.</li>
+      <li>John Wiegley: <a href="https://jwiegley.github.io/git-from-the-bottom-up/" target="_blank">Git from the Bottom Up</a>.</li>
+      <li>Jenkins: <a href="https://www.jenkins.io/user-handbook.pdf" target="_blank">user handbook</a>, <a href="https://www.jenkins.io/doc/" target="_blank">user documentation</a>, <a
+          href="https://www.oreilly.com/library/view/jenkins-bootcamp/9781787124134/" target="_blank">Jenkins bootcamp</a>, <a href="https://www.udemy.com/course/jenkins-continuous-integration-bootcamp/" target="_blank">Jenkins 2 Bootcamp</a>.</li>
+      <li>Brent Laster. <em>Jenkins 2: Up and Running</em>. O'Reilly Media, 2018.</li>
+      <li>Russ McKendrick, Pethuru Raj, Jeeva S. Chelladhurai, and Vinod Singh. <em>Docker Bootcamp: The fastest way to learn Docker</em>. Packt Publishing, 2017. </li>
+      <li><a href="https://www.devopsschool.com/" target="_blank">DevOps School</a>.</li>
+      <li>Gruntwork.io: <a href="https://www.gruntwork.io/training/" target="_blank">DevOps Training Library</a>.</li>
+      <li><a href="https://www.jrebel.com/resources" target="_blank">JRebel resources</a>.</li>
+      <li><a href="https://windirstat.net/" target="_blank">WinDirStat: A disk usage statistics viewer and cleanup tool for Microsoft Windows</a>.</li>
+    </ul>
+    <hr>
+
+    <h3>Economics & Economic History</h3>
+
+    <em>All theory, dear friend, is gray, but the golden tree of life springs ever green.</em> -- Johann Wolfgang von Goethe
+
+    <ul>
+      <li>陕甘宁边区银行纪念馆、《朱理治金融论稿》编纂委员会：《朱理治金融论稿》，北京：中国财政经济出版社，1993。<a href="http://www.aisixiang.com/data/26555.html" target="_blank">简述</a></li>
+      <li>爱德华多·加莱亚诺著，王玖等译，邓兰珍校：《拉丁美洲：被切开的血管》，北京：人民文学出版社，2001。</li>
+      <li>弗里德里希·李斯特著，陈万煦译，蔡受百注：《政治经济学的国民体系》，商务印书馆汉译世界学术名著丛书（1961年10月）。<a href="http://www.shuku.net/novels/zatan/zzjjxdgmtx/zzjjxdgmtx.html" target="_blank">在线阅读</a></li>
+      <li>Friedrich List. <a href="https://oll.libertyfund.org/title/lloyd-the-national-system-of-political-economy" target="_blank"><em>The National System of Political Economy (1841)</em></a>.</li>
+      <li>张夏准著，严荣译：《富国的伪善》，社会科学文献出版社，2009年1月。</li>
+      <li>张夏准著，孙建中译：《资本主义的真相——自由市场经济学家的23个秘密》，新华出版社，2011年6月。</li>
+      <li>Ha-joon Chang. <em>23 Things They Don't Tell You About Capitalism</em>, reprinted edition. Bloomsbury Press, 2012.</li>
+      <li>Peter E. Kennedy and Jay Prag. <em>Macroeconomic Essentials: Understanding Economics in the News</em>, 4th edition. The MIT Press, 2017.</li>
+      <li>Peter L. Bernstein. <em>A Primer on Money, Banking, and Gold</em>. Wiley, 2008.</li>
+      <li>Ib Ravn. <a href="bookshelf/Ravn_explaining-money-creation-by-commercial-banks.pdf" target="_blank">Explaining money creation by commercial banks: Five analogies for public education</a>. <em>Real-World Economics Review</em>, Issue No. 71.
+      </li>
+      <li>张夏准：<a href="bookshelf/FAO_agricultural-policies.pdf" target="_blank">《反思农业公共政策—历史的经验》</a>，联合国粮农组织，2009。</li>
+      <li>Ha-Joon Chang. <a href="http://www.fao.org/policy-support/tools-and-publications/resources-details/en/c/434877/" target="_blank"><em>Rethinking public
+            policy in agriculture: Lessons from distant and recent history</em></a>. UN FAO, 2009. </li>
+      <li>威廉·多姆霍夫：《谁统治美国？公司富豪的胜利》，外语教学与研究出版社，2017年。</li>
+      <li>William Domhoff. <em>Who Rules America? The Triumph of the Corporate Rich</em>, 7th edition. McGraw-Hill Education, 2013.</li>
+      <li>赖特·米尔斯：《权力精英》，新华出版社，2017年。</li>
+      <li>Wright Mills. <em>The Power Elite</em>. Oxford University Press, 2000.</li>
+      <li>EH.net: <a href="https://eh.net/howmuchisthat/" target="_blank">Measuring Worth</a>.</li>
+    </ul>
+    <hr>
+
+    <h3>Quantitative Finance</h3>
+
+    <h4>General</h4>
+    <ul>
+      <li>Alex Kuznetsov. <em>The Complete Guide to Capital Markets for Quantitative Professionals</em>. McGraw-Hill Education, 2006.</li>
+      <li>Sergio M. Focardi and Frank J. Fabozzi. <em>The Mathematics of Financial Modeling and Investment Management</em>. Wiley, 2004.</li>
+      <li>Jay Vaananen. <em>Dark Pools and High Frequency Trading for Dummies</em>. For Dummies, 2015.</li>
+      <li>MIT OpenCourseWare 18.S096: <a href="https://ocw.mit.edu/courses/mathematics/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/index.htm" target="_blank"><em>Topics in Mathematics with Applications in Finance</em></a>, MIT
+        OCW, Fall 2013.</li>
+      <li>John H. Cochrane. Business 35150: <a href="https://www.johnhcochrane.com/business-35150-advanced-investments" target="_blank"><em>Advanced Investments</em></a>, University of Chicago Booth School of Business, Winter 2014.</li>
+      <li><a href="https://www.aqr.com/Learning-Center" target="_blank">AQR Learning Center</a>.</li>
+    </ul>
+
+    <h4>Resources for a Buy Side Fixed Income Quant</h4>
+    <ul>
+      <li><a href="https://www.bloomberg.com/professional/product/bloomberg-market-concepts/" target="_blank">Bloomberg Market Concepts</a>. <a href="bookshelf/BBG_intro-swap.pdf">An introduction to the use of the Bloomberg system in swap analysis</a>.
+        <a href="https://guides.library.yale.edu/Bloomberg/bloomberg_docs" target="_blank">Bloomberg Key Functions & Cheat Sheets</a>.
+      </li>
+      <li>WallStreetPrep. <a href="https://www.wallstreetprep.com/self-study-programs/crash-course-in-bonds/" target="_blank"><em>Crash Course in Bonds</em></a>.</li>
+      <li>Fabozzi & Mann. <em>Introduction to Fixed Income Analytics</em>, 2nd edition. Wiley, 2010.</li>
+      <li>David Bolder. <em>Fixed-Income Portfolio Analytics</em>. Springer, 2015.</li>
+      <li>Arik Ben Dor, Leve Dynkin, Jay Hyman, and Bruce D. Phelps. <em>Quantitative Credit Portfolio Management</em>. Wiley, 2011.</li>
+      <li>Robert S. Kricheff. <em>A Pragmatist's Guide to Leveraged Finance: Credit Analysis for Bonds and Bank Debt</em>. FT Press, 2012.</li>
+      <li><a href="https://www.portfoliovisualizer.com/" target="_blank">Portfolio Visualizer</a>.</li>
+    </ul>
+
+    <h4>Resources for a Sell Side Fixed Income Quant</h4>
+    <ul>
+      <li>Static Data</li>
+      <ul type="circle">
+        <li>Holiday Data: <a href="https://www.coppclark.com/" target="_blank">Copp Clark</a>.</li>
+        <li>Day count convention: <a href="https://en.wikipedia.org/wiki/Day_count_convention" target="_blank">Wikipedia</a>, <a href="https://en.wikipedia.org/wiki/Day_count_convention" target="_blank">treasures.org</a>, <a
+            href="http://strata.opengamma.io/apidocs/com/opengamma/strata/basics/date/DayCounts.html" target="
+          ">OpenGamma Strata</a>, <a href="bookshelf/Nasdaq_day-count-fractions.pdf">Nasdaq</a>.</li>
+        <li>Instrument conventions: <a href="bookshelf/OpenGamma_Interest-Rate-Instruments-and-Market-Conventions.pdf" target="_blank">OpenGamma Interrest Rate Instrument and Market Conventions Guide</a>.</li>
+        <li>Reference Data: <a href="http://finra-markets.morningstar.com/BondCenter/Default.jsp" target="_blank">FINRA Bonds</a>.</li>
+        <li>Paul Miron and Philip Swannell. <em>Pricing and Hedging Swaps</em>. Euromoney Books, 1991.</li>
+      </ul>
+
+      <li>Market Data</li>
+      <ul types="circle">
+        <li>USD: <a href="https://www.federalreserve.gov/releases/h15/" target="_blank">Federal Reserve H.15 Selected Interest Rates</a>.</li>
+      </ul>
+
+      <li>Marc Henrard. <em>Interest Rate Modelling in the Multi-Curve Framework: Foundations, Evolution and Implementation</em>. Palgrave Macmillan, 2014.</li>
+
+      <li><a href="https://strata.opengamma.io/quant_research/" target="_blank">OpenGamma Quantitative Research</a></li>
+      <ul type="circle">
+        <li><a href="http://strata.opengamma.io/apidocs/index.html" target="_blank">OpenGamma Strata Library</a></li>
+        <li>Rates</li>
+        <ul type="square">
+          <li><a href="bookshelf/OpenGamma_Analytic-Framework-for-Implying-Yield-Curves-from-Market-Data.pdf" target="_blank">The Analytic Framework for Implying Yield Curves from Market Data</a>.</li>
+          <li><a href="bookshelf/OpenGamma_Multiple-Curve-Construction.pdf" target="_blank">Multiple Curve Construction</a>.</li>
+          <li><a href="bookshelf/OpenGamma_Multi-Curves-Variations-on-a-Theme.pdf" target="_blank">Multi-Curves: Variations on a Theme</a>.</li>
+          <li><a href="bookshelf/OpenGamma_Multi-Curve-Framework-with-Collateral.pdf" target="_blank">Multi-Curve Framework with Collateral</a>.</li>
+          <li><a href="bookshelf/OpenGamma_Multi-Curves-Stochastic-Spread-STIR-Futures-Options.pdf" target="_blank">Multi-Curves Framework with Stochastic Spread: A Coherent Approach to STIR Futures and Their Options</a>.</li>
+          <li>Curve Calibration in Practice: Requirements and Nice-to-Haves.</li>
+          <li><a href="bookshelf/OpenGamma_Bill-Pricing.pdf" target="_blank">Bill Pricing</a>.</li>
+          <li><a href="bookshelf/OpenGamma_Bond-Pricing.pdf" target="_blank">Bond Pricing</a>.</li>
+          <li><a href="bookshelf/OpenGamma_Bond-Futures.pdf" target="_blank">Bond Futures: Description and Pricing</a>.</li>
+        </ul>
+        <li>Credit</li>
+        <ul type="square">
+          <li><a href="bookshelf/OpenGamma_pricing-and-risk-management-credit-default-swaps.pdf" target="_blank">Pricing and Risk Management of CDS, with a Focus on the ISDA model</a>.</li>
+          <li><a href="bookshelf/OpenGamma_Single-Name-CDS-Conventions.pdf" target="_blank">Conventions for Single-Name CDS</a>.</li>
+        </ul>
+      </ul>
+
+      <li>Bloomberg</li>
+      <ul type="circle">
+        <li><a href="https://www.bloomberg.com/professional/support/api-library/" target="_blank">Bloomberg Open API Library Support</a>, <a href="https://bloomberg.github.io/blpapi-docs/" target="_blank">BLPAPI Documentation</a>.</li>
+        <li>Curves</li>
+        <ul type="square">
+          <li><a href="http://janroman.dhis.org/finance/OIS/CurveBuid%20-%20Bootstrap/BBG-TheNewSwapMath.pdf" target="_blank">The New Swap Math</a>.</li>
+          <li><a href="https://www.scribd.com/document/325253917/Bbg-Ois-Methodology" target="_blank">OIS Discounting and Dual-Curve Stripping Methodology at Bloomberg</a>.</li>
+          <li><a href="https://www.scribd.com/document/325253917/Bbg-Ois-Methodology" target="_blank">Extending USD OIS Curves Using Fed Funds Basis Swap Quotes</a>.</li>
+          <li>Building the Bloomberg Interest Rate Curve -- Definitions and Methodology.</li>
+          <li>Default-Adjusted Par Curves.</li>
+          <li>OIS Framework through BVAL Derivatives.</li>
+          <li>Overview of Bloomberg Models for Interest Rate Derivatives in DLIB.</li>
+        </ul>
+      </ul>
+
+      <li>Numerix</li>
+      <ul type="circle">
+        <li>Curves</li>
+        <ul type="square">
+          <li>A Note on Constructing Treasury Yield Curves.</li>
+          <li>USD Multi-Curve Construction: Bootstrapping vs. Global Solving.</li>
+          <li>Expanded View: Interpolation Methods in CorssAsset.</li>
+        </ul>
+      </ul>
+      <li>Kalotay: <a href="http://kalotay.com/sites/default/files/private/bondoas.overview.html" target="_blank">BondOAS Library Overview</a>, <a href="http://kalotay.com/sites/default/files/private/bondoas.api.html" target="_blank">BondOAS Library
+          API Documentation</a>.</li>
+      <li>FinPricing: <a href="https://finpricing.com/knowledge.html" target="_blank">Knowledge is Power</a>.</li>
+    </ul>
+    <hr>
+
+    <h3>Pursuing a PhD?</h3>
+    <ul>
+      <li>Robert Peters: Getting What You Came For: The Smart Student's Guide to Earning an M.A. or a Ph.D. (April 11, 1997). <a href="https://www.amazon.com/Getting-What-You-Came-Students/dp/0374524777" target="_blank">Amazon</a>, <a
+          href="http://peterc.org/pedia/getting-what-you-came-for/" target="_blank">Summary</a>.</li>
+      <li>Andrej Karpathy: <a href="https://karpathy.github.io/2016/09/07/phd/" target="_blank">A survival guide to a PhD</a>.</li>
+      <li>Philip Guo: <a href="https://pg.ucsd.edu/PhD-application-tips.htm" target="_blank">A Five-Minute Guide to Ph.D. Program Applications</a>, <a href="https://pg.ucsd.edu/PhD-memoir.htm" target="_blank"><em>The Ph.D. Grind</em></a>.</li>
+    </ul>
+  </div>
+
+  <div id="Quant Summaries" class="tabcontent">
+    <h3>Economics & Finance</h3>
+
+    <ul>
+      <li>Firms in competitive markets. <a href="quant-summaries/firms-in-competitive-markets.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>A study note on the IS-LM & Mundell-Fleming models. <a href="quant-summaries/IS-LM-and-Mundell-Fleming-models.pdf" target="_blank">Version 1.0.2</a>.</li>
+      <li>Mathematical clarification of Ricardo's model of comparative advantage. <a href="quant-summaries/ricardo-comparative-advantage.pdf" target="_blank">Version 1.1.2</a>.</li>
+      <li>Mean variance analysis and CAPM. <a href="quant-summaries/mva-capm.pdf" target="_blank">Version 1.0.2</a>.</li>
+      <li>Book Summary: <em>Warren Buffett and the Interpretation of Financial Statements</em> (by Mary Buffett and David Clark). <a href="quant-summaries/Buffett-financial-statements.pdf" target="_blank">Version 1.0.1</a>.</li>
+    </ul>
+    <hr>
+
+    <h3>Derivative Pricing</h3>
+    <ul>
+      <li>Fundamental Theorem of Asset Pricing in a nutshell: With a view toward numeraire change. <a href="quant-summaries/Zeng_FTAP_in_a_nutshell.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>A note on Hagan's adjusters. <a href="quant-summaries/Zeng_adjusters.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>Convexity adjustment: A user's guide. <a href="quant-summaries/Zeng_convexity_adj.pdf" target="_blank">Version 1.0.1</a>.</li>
+      <li>Approximation formulas for implied volatility. <a href="quant-summaries/Zeng_approx_impl_vol.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>Elements of Hull-White model. <a href="quant-summaries/Zeng_HW.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>HJM model and interest rate derivatives modeling. <a href="quant-summaries/Zeng_HJM.pdf" target="_blank">Version 1.0.1</a>.</li>
+      <li>Elements of LGM model. <a href="quant-summaries/Zeng_LGM.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>SABR model. <a href="quant-summaries/Zeng_SABR.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>Covariance matrix of factors in two-factor Hull-White model under money market account numeraire. <a href="quant-summaries/Zeng_covar_matrix_hw2f.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>Interest rate modeling: A summary. <a href="quant-summaries/Zeng_interest_rate_modeling_shreve.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>Martin Bohner. <a href="https://web.mst.edu/~bohner/fim-10/fim.html" target="_blank">Fixed Income Models</a>. (Lecture notes for "Advanced Topics in Financial Mathematics", essentially a book summary of Brigo & Mercurio). </li>
+    </ul>
+    <hr>
+
+    <h3>Math, Probability & Statistics</h3>
+
+    <ul>
+      <li>Construction of Markov processes. <a href="quant-summaries/Zeng_markov.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>Frequently used results from measure theory. <a href="quant-summaries/Zeng_measuretheory.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>Pinned diffusions. <a href="quant-summaries/Zeng_pinneddiffusion.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>Time series models: A guide for practitioners. <a href="quant-summaries/Zeng_summary_ts_models.pdf" target="_blank">Version 1.0.2</a>.</li>
+      <li>Classical linear regression model: Assumptions and diagnostic tests. <a href="quant-summaries/Zeng_clrm_diag_tests.pdf" target="_blank">Version 1.1</a>.</li>
+      <li>Three perspectives on Jordan canonical form: <a href="quant-summaries/Zeng_Jordan_Canonical_Form_1_Lan_Matrix_Approach.pdf" target="_blank">matrix theory</a>, <a href="quant-summaries/Zeng_Jordan_Canonical_Form_2 Lax_Spectral_Theory.pdf"
+          target="_blank">spectral theory</a>, <a href="quant-summaries/Zeng_Jordan_Canonical_Form_3 Gong_Module_Theory.pdf" target="_blank">module theory</a>.</li>
+      <li>Influence curve and robust estimation (in Chinese). <a href="quant-summaries/Zeng_influence_curve_and_robust_estimation.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>Density estimation and non-parametric regression (in Chinese). <a href="quant-summaries/Zeng_density_est_nonparam_reg.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>Random Forest cheat sheet. <a href="quant-summaries/Zeng_Random_Forest_cheat_sheet.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>Colin Cameron: <a href="quant-summaries/Cameron_Brief_asymptotic_theory_for_240A.pdf" target="_blank">Asymptotic Theory for OLS Estimator</a>.</li>
+    </ul>
+    <hr>
+
+    <h3>Practical Problems in Quant Finance</h3>
+
+    <ul>
+      <li><a href="quant-summaries/Zeng_condition_LDP.pdf" target="_blank">Large deviation property of the condition number of a rectangular random Vandermonde-like matrix</a>.</li>
+      <li><a href="quant-summaries/Zeng_corr_norm_bin.pdf" target="_blank">Maximum value of the correlation between a standard normal random variable and a binomial random variable</a>.</li>
+      <li><a href="quant-summaries/Zeng_calib_hw1f_to_caps.pdf" target="_blank">Numerical analysis of calibrating HW1F to caps market</a>.</li>
+      <li><a href="quant-summaries/Zeng_wbl2mle.pdf" target="_blank">Maximum likelihood estimation of two-parameter Weibull distribution</a>.</li>
+      <li><a href="quant-summaries/Zeng_power_regression_semi-closed.pdf" target="_blank">A semi-closed form solution to power regression</a>.</li>
+    </ul>
+    <hr>
+
+    <h3>Quant Summaries</h3>
+
+    <ul>
+      <li>Book Summary: <em>Econometrics for Dummies</em> (by Roberto Pedace). <a href="quant-summaries/BookSummary_Econometrics-for-Dummies.pdf" target="_blank">Version 1.0.5</a>.</li>
+      <li>Book Summary: <em>Introductory Econometrics for Finance, 2nd edition</em> (by Chris Brooks). <a href="quant-summaries/BookSummary_Introductory-Econometrics-for-Finance-2ed.pdf" target="_blank">Version 1.0</a>. <a
+          href="https://www.cambridge.org/us/academic/textbooks/introductory-econometrics" target="_blank">Publisher's resources site</a>, <a href="https://www.youtube.com/watch?v=XTkpdkWVfOU&list=PL58gEE9UNSimFCR_z068GIGi88wc8Momp"
+          target="_blank">video lectures</a>.</li>
+      <li>Book Summary: <em>Regression Diagnostics, 2nd edition</em> (by John Fox). <a href="quant-summaries/BookSummary_Regression-Diagnostics-2ed.pdf" target="_blank">Version 1.1</a>. <a
+          href="https://socialsciences.mcmaster.ca/jfox/Books/RegressionDiagnostics/index.html" target="_blank">Author's resource site</a>.</li>
+      <li>Book Summary: 《金融时间序列分析》（蔡瑞胸著）课堂讲义（<a href="https://www.math.pku.edu.cn/teachers/lidf/course/index.htm" target="_blank">李东风</a>）。<a href="quant-summaries/Li_FTSA.pdf" target="_blank">PDF</a></li>
+      <li>Book Summary: 《应用时间序列分析》（何书元著）课堂讲义（<a href="https://www.math.pku.edu.cn/teachers/lidf/course/index.htm" target="_blank">李东风</a>）。<a href="quant-summaries/Li_ATSA.pdf" target="_blank">PDF</a></li>
+      <li>Book Summary: <em>Interest Rate Modeling</em> (by Leif Andersen and Vladimir Piterbarg). <a href="quant-summaries/AP-interest-rates.pdf" target="_blank">Summary</a> by <a href="http://www.math.utah.edu/~watson/" target="_blank">Alan Marc
+          Watson</a>.</li>
+    </ul>
+
+    <ul>
+      <li>Course Summary: <em>An Introduction to Statistical Learning</em> (by Hastie and Tibshirani). <a href="quant-summaries/CourseSummary_intro-stat-learning.pdf" target="_blank">Version 1.0.1</a>. <a
+          href="https://www.r-bloggers.com/in-depth-introduction-to-machine-learning-in-15-hours-of-expert-videos/" target="_blank">Videos</a>.</li>
+      <li>Course Summary: <em>MIT OpenCourseWare 18.443 Statistics for Applications, Fall 2003</em>. <a href="quant-summaries/CourseSummary_MIT-OCW-Stat-App.pdf" target="_blank">Version 1.0.1</a>. <a
+          href="https://ocw.mit.edu/courses/mathematics/18-443-statistics-for-applications-fall-2003/" target="_blank">Course website</a>.</li>
+    </ul>
+
+    <ul>
+      <li>Origin of Copula: <a href="quant-summaries/Hamati_Copula-in-1959.pdf" target="_blank">n-Dimensional Distribution Functions and Their Marginals</a> (by M. Sklar and translated by Gheis H. Hamati). <a
+          href="https://matherhodge.com/tribute/details/854/Gheis-Hamati/obituary.html#tribute-start" target="_blank">In memory of Gheis Henri Hamati (1958-2016)</a>.</li>
+      <li>Paper Summary: "<a href="https://www.nber.org/papers/w8221" target="_blank">Valuation ratios and the long-run stock market outlook: An update</a>" (by John Y. Campbell and Robert J. Shiller, April 2001). <a
+          href="quant-summaries/Zeng_Campbell_Shiller_2001.pdf" target="_blank">Version 1.0.1</a>.</li>
+      <li>Paper Summary: "<a href="https://www.bbhub.io/indices/sites/2/2017/03/Index-Methodology-2017-03-17-FINAL-FINAL.pdf" target="_blank">Bloomberg Barclays Index Methodology</a>" (by Bloomberg LP, March 2017). <a
+          href="quant-summaries/Zeng_BBG_Barclays_bond_index_method.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>Patent on execution probability of equity limit orders. <a href="https://patents.google.com/patent/US20090271330A1/en" target="_blank">Google patent</a>.</li>
+    </ul>
+    <hr>
+
+    <h3>Miscellaneous</h3>
+    <ul>
+      <li>艾德勒、范多伦：《如何阅读一本书》。<a href="quant-summaries/How_to_read_a_book.pdf" target="_blank">版本1.0</a>.</li>
+    </ul>
+  </div>
+
+  <div id="Solution Manuals" class="tabcontent">
+    <h3>Finished Solution Manuals</h3>
+
+    <ul>
+      <li>Peter Lax. <em>Linear Algebra and Its Applications</em>, 2nd edition. Wiley-Interscience, 2007. <a href="solution-manuals/lax_la2.pdf" target="_blank">Version 1.0.4</a>.</li>
+      <li>Dmitry Panchenko. MIT Open Course 18.443: <em>Statistics for Applications</em>. MIT OCW, Fall 2003. <a href="solution-manuals/panchenko_stats4appl.pdf" target="_blank">Version 1.0.1</a>, <a
+          href="https://ocw.mit.edu/courses/mathematics/18-443-statistics-for-applications-fall-2003/" target="_blank">course website</a>.</li>
+      <li>Steven E. Shreve. <em>Stochastic Calculus for Finance I: The Binomial Asset Pricing Model</em>. Springer, 2004. <a href="solution-manuals/shreve_stochcal4fin_1.pdf" target="_blank">Version 1.1</a>.</li>
+      <li>Steven E. Shreve. <em>Stochastic Calculus for Finance II: Continuous-Time Models</em>. Springer, 2004. <a href="solution-manuals/shreve_stochcal4fin_2.pdf" target="_blank">Version 1.0.8</a>.</li>
+      <li>Gong Sheng and Gong Yuhong. <em>Concise Complex Analysis</em>, revised edition. World Scientific, 2007. <a href="solution-manuals/gong_cca.pdf" target="_blank">Version 0.2</a>. <a href="solution-manuals/Abel-Dedekind-Dirichlet_Theorem.pdf"
+          target="_blank">Abel-Dedekind-Dirichlet Theorem</a>.</li>
+      <li>吴崇试：《数学物理方法（第二版）》。北京大学出版社，2003. <a href="solution-manuals/wu_sxwlff2.pdf" target="_blank">Version 0.1.3</a></li>
+      <ul type="circle">
+        <li>Notes on Riemann Surfaces: <a href="solution-manuals/Notes_on_Riemann_surfaces_1.pdf" target="_blank">part 1</a>, <a href="solution-manuals/Notes_on_Riemann_surfaces_2.pdf" target="_blank">part 2</a>.</li>
+        <li>M. A. Qazi. <a href="solution-manuals/Qazi_The_mean_value_theorem_and_analytic_functions.pdf" target="_blank">The mean value theorem and analytic functions of a complex variable</a>. <em>J. Math. Anal. Appl.</em>, 324 (2006) 30-38.</li>
+        <li><a href="solution-manuals/Solving_recurrence_relations.pdf" target="_blank">Solving recurrence relation</a>.</li>
+        <li>Niloufar Shafiei: <a href="solution-manuals/Shafiei_Linear_recurrences.pdf" target="_blank">solving linear recurrenc relation</a>.</li>
+        <li>W. G. Smiley Jr. and G. C. Evans. <a href="solution-manuals/Smiley_Evans_The_first_variation_of_a_functional.pdf" target="_blank">The first variation of a function</a>. <em>Bull. Amer. Math. Soc.</em> Volume 36, Number 6 (1930), 427-433.
+        </li>
+      </ul>
+    </ul>
+    <hr>
+
+    <h3>Solution Manuals in Progress</h3>
+
+    <ul>
+      <li>Evgenii B. Dynkin and Aleksandr A. Yushkevich. <em>Markov Process: Theorems and Problems</em>. Plenum Press, 1969. <a href="solution-manuals/dynkin_yushkevich.pdf" target="_blank">Version 0.1</a>.</li>
+      <li>Lawrence Evans. <em>Partial Differential Equations</em> (GSM19). AMS, 1998. <a href="solution-manuals/evans.pdf" target="_blank">Version 0.1</a>.</li>
+      <li>James R. Munkres. <em>Analysis on Manifolds</em>. Westview Press, 1997. <a href="solution-manuals/munkres.pdf" target="_blank">Version 0.1.1</a>.</li>
+      <li>Bernt Oksendal. <em>Stochastic Differential Equations: An Introduction with Applications</em>, 6th Edition. Springer, 2003. <a href="solution-manuals/oksendal.pdf" target="_blank">Version 0.1.3</a>.</li>
+      <li>Sheldon M. Ross. <em>Simulation</em>, 3rd Edition. Academic Press, 2002. <a href="solution-manuals/ross.pdf" target="_blank">Version 0.1</a>.</li>
+      <li>Michael Spivak. <em>Calculus on Manifolds</em>. Addison-Wesley Publishing Company, 1965. <a href="solution-manuals/spivak.pdf" target="_blank">Version 1.0</a>.</li>
+      <li>Lloyd N. Trefethen and David Bau, III. <em>Numerical Linear Algebra</em>. SIAM, 1997. <a href="solution-manuals/trefethen_bau.pdf" target="_blank">Version 0.1.1</a>.</li>
+      <li>陈家鼎、孙山泽、李东风、刘力平：《数理统计学讲义（第2版）》。北京：高等教育出版社，2006。<a href="solution-manuals/lectures-on-math-stats-2ed.pdf" target="_blank">Version 0.1</a>.</li>
+    </ul>
+  </div>
+
+  <div id="Cheat Sheet" class="tabcontent">
+    <h3>Programming</h3>
+
+    <ul>
+      <li>Awk Cheat Sheet: <a href="https://www.shortcutfoo.com/app/dojos/awk/cheatsheet" target="_blank">https://www.shortcutfoo.com/app/dojos/awk/cheatsheet</a></li>
+      <li>Bash Cheat Sheet: <a href="https://gist.github.com/LeCoupa/122b12050f5fb267e75f" target="_blank">https://gist.github.com/LeCoupa/122b12050f5fb267e75f</a></li>
+      <li>Git Cheat Sheet: <a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet" target="_blank">https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet</a>, <a href="cheat-sheet/Atlassian-Git-Cheatsheet.pdf"
+          target="_blank">PDF</a>.</li>
+      <li>Grep Cheat Sheet: <a href="https://ryanstutorials.net/linuxtutorial/cheatsheetgrep.php" target="_blank">https://ryanstutorials.net/linuxtutorial/cheatsheetgrep.php</a></li>
+      <li>Scoop Quick Start: <a href="https://github.com/lukesampson/scoop/wiki/Quick-Start" target="_blank">https://github.com/lukesampson/scoop/wiki/Quick-Start</a></li>
+      <li>Sed Cheat Sheet: <a href="https://gist.github.com/ssstonebraker/6140154" target="_blank">https://gist.github.com/ssstonebraker/6140154</a></li>
+      <li>SQL Cheat Sheet: <a href="https://jrebel.com/rebellabs/sql-cheat-sheet/" target="_blank">https://jrebel.com/rebellabs/sql-cheat-sheet/</a></li>
+      <li>Vim Cheat Sheet: <a href="https://vim.rtorr.com/" target="_blank">https://vim.rtorr.com/</a></li>
+      <li>wget tutorial: wget -mkEpnp -e robots=off [link]; <a href="https://www.thegeekstuff.com/2009/09/the-ultimate-wget-download-guide-with-15-awesome-examples"
+          target="_blank">https://www.thegeekstuff.com/2009/09/the-ultimate-wget-download-guide-with-15-awesome-examples</a></li>
+    </ul>
+    <hr>
+
+    <h3>LaTeX</h3>
+
+    <ul>
+      <li>Winston Chang: <a href="https://wch.github.io/latexsheet/latexsheet.pdf" target="_blank">LaTeX2e Cheat Sheet</a></li>
+      <li>George Gratzer: <a href="http://tug.ctan.org/info/mil/mil.pdf" target="_blank">Math into LaTeX</a>, <a href="cheat-sheet/More Math into LaTeX 5ed.pdf" target="_blank">More Math into LaTeX (5th edition)</a></li>
+      <li>Ye Zhao: <a href="cheat-sheet/How to use IguanaTex for PPT_YZ ver 1A.pdf" target="_blank">IguanaTex in MS PPT - Step by Step Tutorial</a>, <a href="cheat-sheet/IguanaTex_v1_58.ppam", target="_blank">download v1.58</a></li>
+    </ul>
+  </div>
+
+  <div id="Things on Mind" class="tabcontent">
+    <h3>Things on Mind</h3>
+
+    <hr>
+    <ul>
+      <li>Expectation Maximization algorithm</li>
+      <ul type="circle">
+        <li>Sean Borman: <a href="papers/Borman_EM algorithm short tutorial.pdf" target="_blank">The Expectation Maximization Algorithm: A short tutorial</a></li>
+        <li>Jeff A. Bilmes: <a href="papers/Bilmes_A gentle tutorial of the EM algorithm and parameter estimation for Gaussian mixture and HMM.pdf" target="_blank">A Gentle Tutorial of the EM Algorithm and its Application to Parameter Estimation for
+            Gaussian Mixture
+            and Hidden Markov Models</a></li>
+        <li><a href="papers/Dempster_Laird_Rubin_Maximum Likelihood from Incomplete Data via the EM Algorithm.pdf" target="_blank">The original paper by Dempseter, Laird & Rubin (1977)</a></li>
+      </ul>
+      <li>Economic Forecasting</li>
+      <ul type="circle">
+        <li>Elliott and Timmermann. <em>Economic Forecasting</em>. Princeton University Press (April 2016). <a href="https://www.amazon.com/Economic-Forecasting-Graham-Elliott/dp/0691140138" target="_blank">Amazon</a>.</li>
+        <li>Allan Timmermann: <a href="https://rady.ucsd.edu/docs/faculty/timmermann/forecasting-methods-in-finance.pdf" target="_blank">Forecasting Methods in Finance</a></li>
+        <li>Graham Elliott and Allan Timmermann: <a href="https://rady.ucsd.edu/docs/faculty/timmermann/forecasting-in-economics-and-finance.pdf" target="_blank">Forecasting in Economics and Finance</a></li>
+      </ul>
+      <li><a href="https://www.linkedin.com/pulse/introducing-extractalpha-risk-model-vinesh-jha" target="_blank">ExtractAlpha Risk Model</a></li>
+      <li><a href="http://chinadatalab.ucsd.edu/resources/ccp-elites-database/" target="_blank">UCSD China Data Lab</a></li>
+      <li>James Simons: <a href="https://www.youtube.com/watch?v=97syDoaluOw" target="_blank">Quantitative Investment Strategy, Career and Trading (2019)</a>, <a href="https://www.youtube.com/watch?v=CkGdKszu1J0">Conquering Wall Street with
+          Mathematics</a></li>
+      <li>Zura Kakushadze and Igor Tulchinsky: <a href="https://arxiv.org/abs/1509.08110" target="_blank">Performance v. Turnover: A Story by 4,000 Alphas</a></li>
+      <li>Sci-Hub: <a href="https://www.theverge.com/2018/2/8/16985666/alexandra-elbakyan-sci-hub-open-access-science-papers-lawsuit" target="_blank">The Verge</a>, <a href="https://www.vox.com/2016/2/17/11024334/sci-hub-free-academic-papers"
+          target="_blank">Vox</a></li>
+      <li>John L. Weathermax, PhD: <a href="https://waxworksmath.com/index.aspx" target="_blank">Solution Manuals in Applied Mathematics</a></li>
+      <li>Dean Curnutt: <a href="https://alphaexchange.simplecast.com/" target="_blank">Alpha Exchange podcast</a></li>
+      <li>CMT Association Podcast: <a href="https://cmtassociation.org/development/podcasts" target="_blank">Fill The Gap</a></li>
+    </ul>
+  </div>
+
+  <div id="Math for Kids" class="tabcontent">
+    <h3>启蒙数学小小班（适合4岁及4岁以上的儿童）</h3>
+    <hr>
+
+    <h3>随堂笔记</h3>
+    <ul>
+      <li><a href="math-for-kids/QMMathHomeWork.docx" target="_blank">家庭作业</a>（更新至20190105）</li>
+      <li><a href="math-for-kids/arithmetic_exercises.py" target="_blank">生成加减法练习题的Python代码</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="math-for-kids/QMMathNotes20200222.docx" target="_blank">随堂笔记20200222</a>：带括号的加减法、四则运算的运算优先级、乘法分配律</li>
+      <li><a href="math-for-kids/QMMathNotes20200118.docx" target="_blank">随堂笔记20200118</a>：同分母分数的加减、复习乘法</li>
+      <li><a href="math-for-kids/QMMathNotes20200104.docx" target="_blank">随堂笔记20200104</a>：分数的概念</li>
+      <li><a href="math-for-kids/QMMathNotes20191123.docx" target="_blank">随堂笔记20191123</a>：长度单位的换算、求不规则图形的面积</li>
+      <li><a href="math-for-kids/QMMathNotes20191117.docx" target="_blank">随堂笔记20191117</a>：求各种图形的面积</li>
+      <li><a href="math-for-kids/QMMathNotes20191102.docx" target="_blank">随堂笔记20191102</a>：找数字运算的规律</li>
+      <li><a href="math-for-kids/QMMathNotes20191019.docx" target="_blank">随堂笔记20191019</a>：用加法结合律和减法结合律简化加减法运算</li>
+      <li><a href="math-for-kids/QMMathNotes20191005.docx" target="_blank">随堂笔记20191005</a>：除法、数图形</li>
+      <li><a href="math-for-kids/QMMathNotes20190928.docx" target="_blank">随堂笔记20190928</a>：除法的概念</li>
+      <li><a href="math-for-kids/QMMathNotes20190921.docx" target="_blank">随堂笔记20190921</a>：“数字糖葫芦”温习乘法表</li>
+      <li><a href="math-for-kids/QMMathNotes20190908.docx" target="_blank">随堂笔记20190908</a>：复习暑假之前讲的加减法</li>
+      <li><a href="math-for-kids/QMMathNotes20190622.docx" target="_blank">随堂笔记20190622</a>：多元一次方程组</li>
+      <li><a href="math-for-kids/QMMathNotes20190608-1.docx" target="_blank">随堂笔记20190608</a>：尺规作图</li>
+      <li><a href="math-for-kids/QMMathNotes20190601.docx" target="_blank">随堂笔记20190601</a>：尺规作图</li>
+      <li><a href="math-for-kids/QMMathNotes20190504.docx" target="_blank">随堂笔记20190504</a>：Set卡牌游戏、投影降维</li>
+      <li><a href="math-for-kids/QMMathNotes20190420.docx" target="_blank">随堂笔记20190420</a>：温习九九乘法表、寻找关于两位数的规律、1+2+...+9求和</li>
+      <li><a href="math-for-kids/QMMathNotes20190413.docx" target="_blank">随堂笔记20190413</a>：温习九九乘法表及多位数加减法</li>
+      <li><a href="math-for-kids/QMMathNotes20190406.docx" target="_blank">随堂笔记20190406</a>：温习乘法</li>
+      <li><a href="math-for-kids/QMMathNotes20190323.docx" target="_blank">随堂笔记20190323</a>：乘法、递归算法</li>
+      <li><a href="math-for-kids/QMMathNotes20190316.docx" target="_blank">随堂笔记20190316</a>：乘法的概念、九九乘法表</li>
+      <li><a href="math-for-kids/QMMathNotes20190223.docx" target="_blank">随堂笔记20190223</a>：钱币算总额、黎曼积分与勒贝格积分。作业：www.commoncoresheets.com/Money.php</li>
+      <li><a href="math-for-kids/QMMathNotes20190126.docx" target="_blank">随堂笔记20190126</a>：减法、乘法分配律、诡辩术</li>
+      <li><a href="math-for-kids/QMMathNotes20190119-1.docx" target="_blank">随堂笔记20190119</a>：加法的凑整速算、练习对数学学习的必要性</li>
+      <li><a href="math-for-kids/QMMathNotes20190105.docx" target="_blank">随堂笔记20190105</a>：加法的凑整速算、加法的进位、数独</li>
+      <li><a href="math-for-kids/QMMathNotes20181215.docx" target="_blank">随堂笔记20181215</a>：几何图形的直观体验</li>
+      <li><a href="math-for-kids/QMMathNotes20181201.docx" target="_blank">随堂笔记20181201及20181208</a>：加法的凑整速算和中位数的直观</li>
+      <li><a href="math-for-kids/QMMathNotes20181117.docx" target="_blank">随堂笔记20181117</a>：多位数加减法、寻找事物的不变量</li>
+      <li><a href="math-for-kids/QMMathNotes20181110.docx" target="_blank">随堂笔记20181110</a>：I Spot 数字游戏、关于浮力的物理实验两则</li>
+      <li><a href="math-for-kids/QMMathNotes20181103.docx" target="_blank">随堂笔记20181103</a>：数数游戏、教具演示的多位数加法进位</li>
+      <li><a href="math-for-kids/QMMathNotes20181027.docx" target="_blank">随堂笔记20181027</a>：万圣节数学游戏</li>
+      <li><a href="math-for-kids/QMMathNotes20181020.docx" target="_blank">随堂笔记20181020</a>：数数游戏、个位数和多位数的加法、个位数的减法、用海盗计数法进行的多位数加法</li>
+      <li><a href="math-for-kids/QMMathNotes20181013.docx" target="_blank">随堂笔记20181013</a>：数数游戏、多位数加法的直观理解、多位数比较大小</li>
+      <li><a href="math-for-kids/QMMathNotes20180908.docx" target="_blank">随堂笔记20180908</a>：三角形的数学和力学性质、皮亚杰的儿童认知实验</li>
+      <li><a href="math-for-kids/QMMathNotes20180901.docx" target="_blank">随堂笔记20180901</a>：顺序和倒序数数、数的奇偶性、海盗计数法、位置计数法、用海盗计数法进行的多位数加法、多位数的对位加法</li>
+      <li><a href="math-for-kids/QMMathNotes20180825.docx" target="_blank">随堂笔记20180825</a>：减法、扑克牌游戏钓鱼</li>
+      <li><a href="math-for-kids/QMMathNotes20180811.docx" target="_blank">随堂笔记20180811</a>：数的奇偶性、减法的实质</li>
+      <li><a href="math-for-kids/QMMathNotes20180804.docx" target="_blank">随堂笔记20180804</a>：加法的实质、加法交换律、数的奇偶性、多位数的位置记法</li>
+    </ul>
+    <hr>
+
+    <h3>辅助教材</h3>
+    <ul>
+      <li>人民教育出版社：<a href="https://www.pep.com.cn/products/sz/ydxx/rjdd/" target="_blank">人教点读APP</a></li>
+      <li>定制化数学习题网站：<a href="https://www.math-aids.com/" target="_blank">Math-Aids.com</a>, <a href="https://www.math-drills.com/" target="_blank">Math-Drills.com</a></li>
+      <li><a href="math-for-kids/multiplication_table.doc" target="_blank">九九乘法表</a></li>
+      <li><a href="http://www.montessorialbum.com" target="_blank">蒙氏教具使用大全</a></li>
+      <li>Areteem Institute: <a href="https://areteem.org/chinese-information" target="_blank">官网</a>、<a href="https://play.google.com/store/apps/details?id=com.GyroD.ZIMLApp&hl=en_US" target="_blank">ZIML on Google Play</a></li>
+      <li><a href="https://mathforlove.com/" target="_blank">Math for Love</a></li>
+      <li>Michael Duffy: Math Works - Montessori Math and the Developing Brain. Parent Child Press; 2nd edition (2014). <a
+          href="https://www.amazon.com/Math-Works-Montessori-Developing-Brain/dp/0939195445/ref=sr_1_2?keywords=montessori+math&qid=1580655827&s=books&sr=1-2" target="_blank">Amazon</a></li>
+      <li><a href="https://www.alisonsmontessori.com/" target="_blank">Alison's Montessori</a></li>
+      <li><a href="https://www.mathcounts.org/" target="_blank">MathCounts</a> (for grade 4+)</li>
+      <li><a href="https://artofproblemsolving.com/" target="_blank">Art of Problem Solving</a></li>
+    </ul>
+    <hr>
+
+    <h3>数学科普</h3>
+    <ul>
+      <li>波利亚：<a href="math-for-kids/Polya_How-to-solve-it.pdf" target="_blank">《如何解题》</a></li>
+      <li>波利亚：<a href="math-for-kids/Polya_Math1.pdf" target="_blank">《数学与猜想第一卷：数学中的归纳和类比》</a></li>
+      <li>波利亚：<a href="math-for-kids/Polya_Math2.pdf" target="_blank">《数学与猜想第二卷：合情推理方式》</a></li>
+      <li>柯郎、罗宾：<a href="math-for-kids/Courant_what-is-math.pdf" target="_blank">《什么是数学：对思想和方法的基本研究（第三版）》</a></li>
+      <li>亚历山大洛夫：《数学——他的内容、方法和意义》（<a href="math-for-kids/Alexandrov_vol1.pdf" target="_blank">第一卷</a>、<a href="math-for-kids/Alexandrov_vol2.pdf" target="_blank">第二卷</a>、<a href="math-for-kids/Alexandrov_vol3.pdf" target="_blank">第三卷</a>）</li>
+      <li>丘成桐：<a href="http://www.kepu.net.cn/gb/basic/szsx/3/3_37/3_37_1.htm" target="_blank">我的数学之路</a></li>
+    </ul>
+    <hr />
+
+    <h3>英语学习</h3>
+
+    <ul>
+      <li><a href="https://www.getepic.com/" target="_blank">Epic Books</a></li>
+      <li><a href="https://www.icanread.com/" target="_blank">I Can Read</a></li>
+      <li><a href="http://www.stepintoreading.com/" target="_blank">Step Into Reading</a></li>
+      <li><a href="https://www.amazon.com/gp/product/0756693136/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1" target="_blank">DK My First Dictionary</a></li>
+      <li><a href="https://apps.apple.com/au/app/kids-picture-dictionary-learn-english-a-z-words/id482972824" target="_blank">Kids Picture Dictionary</a></li>
+      <li><a href="https://apps.apple.com/au/app/giant-picture-dictionary/id585224423" target="_blank">Giant Picture Dictionary</a></li>
+      <li><a href="https://apps.apple.com/us/app/dictionary-with-pictures/id1130165462" target="_blank">Dictionary with Pictures</a></li>
+      <li><a href="https://first-school.ws/theme/printables/writing-paper/handwriting.htm" target="_blank">Printable Writing Paper for Handwriting</a></li>
+    </ul>
+    <hr>
+
+    <h3>中文学习</h3>
+
+    <ul>
+      <li><a href="http://www.zdic.net/" target="_blank">汉典</a></li>
+      <li>中文天下：<a href="https://yes-chinese.com/tzg/" target="_blank">田字格打印</a></li>
+      <li><a href="https://an2.net/zi/" target="_blank">田字格字帖生成器（支持笔顺）</a></li>
+    </ul>
+  </div>
+
+  <div id="Contact Me" class="tabcontent">
+    <h2>Get In Touch</h2>
+
+    <form action="mailto:quantsummaries@gmail.com" method="post" enctype="text/plain">
+      <div>
+        <label for="">Your Name</label><br>
+        <input type="text" name="name" value="" required><br><br>
+      </div>
+      <div>
+        <label for="">Your Email</label><br>
+        <input type="email" name="email" value="" required><br><br>
+      </div>
+      <div>
+        <label for="">Message</label><br>
+        <textarea name="message" rows="20" cols="80" required></textarea><br>
+      </div>
+      <input type="submit" name="" value="Submit" class="fb9">
+    </form>
+  </div>
+
+  <script>
+    function openPage(evt, pageName) {
+
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(pageName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+
+  Last updated: 2021-03-03.
 </body>
 
 </html>
