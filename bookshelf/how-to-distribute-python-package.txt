@@ -1,0 +1,29 @@
+*** How to package a project and distribute it to another project? Pycharm environment.
+
+1. move into project A's root directory, create the setup.py file:
+   [reference:
+    https://packaging.python.org/tutorials/packaging-projects/
+    https://stackoverflow.com/questions/24347450/how-do-you-add-additional-files-to-a-wheel]
+
+1. move into project A's root directory, from Pycharm's Terminal, generate wheel file and requirement file:
+   python setup.py bdist_wheel
+   pip freeze > requirement.txt
+
+   [source:
+    https://medium.com/swlh/beginners-guide-to-create-python-wheel-7d45f8350a94
+    https://packaging.python.org/guides/distributing-packages-using-setuptools/]
+
+2. move into the auto created 'dist' sub-directory, and install package A to local computer's site-packages directory:
+   pip install --no-index *.whl
+   [reference:
+    https://packaging.python.org/tutorials/installing-packages/
+    https://pip.pypa.io/en/stable/reference/pip_install/#install-no-index
+    https://stackoverflow.com/questions/15031694/installing-python-packages-from-local-file-system-folder-to-virtualenv-with-pip]
+
+3. move into project B's root directory, copy project A's wheel file and requirement.txt file to it.
+
+4. from Pycharm's Terminal, install package A to project B's Lib/site-packages directory:
+   pip install --no-index *.whl
+
+5. resusciate project A's python environment for project B:
+   pip install -r requirement.txt
